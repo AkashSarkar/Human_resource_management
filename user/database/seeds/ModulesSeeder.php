@@ -55,6 +55,9 @@ class ModulesSeeder extends Seeder
             'name' => 'Post',
             'tag' => 'post'
         ]);
-
+        DB::table('modules')->insert([
+            'name' => 'Expense',
+            'tag' => 'expense'
+        ]);
     }
 }

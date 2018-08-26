@@ -54,6 +54,8 @@ class AppServiceProvider extends ServiceProvider
             'App\Domain\RepoImpl\CompanyRepoImpl');
         $this->app->bind('App\Domain\Repo\InterestRepo',
             'App\Domain\RepoImpl\InterestRepoImpl');
+        $this->app->bind('App\Domain\Repo\ExpenseRepo',
+            'App\Domain\RepoImpl\ExpenseRepoImpl');
 
     }
 }

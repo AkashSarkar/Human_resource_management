@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Session;
 
 class MenuAdminModel extends Model
 {
-    protected $table = 'menus_admin';
+    protected $table = 'menus';
     protected $primaryKey = 'id';
     public $timestamps = TRUE;
     protected $fillable = array('label', 'uri_name', 'url', 'status', '_parent_id', '_sort');

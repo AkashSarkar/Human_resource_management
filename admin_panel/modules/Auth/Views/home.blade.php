@@ -360,10 +360,10 @@
 
 
         <!--script calling from list.js-->
-        <input type="hidden" id="posts" value="{{route('total-post')}}">
+        {{--<input type="hidden" id="posts" value="{{route('total-post')}}">--}}
     </div>
 @endsection
 @push('scripts')
     {{--ajax script--}}
-    <script src="{{asset("resources/assets/backjs/dashboard/list.js")}}"></script>
+    {{--<script src="{{asset("resources/assets/backjs/dashboard/list.js")}}"></script>--}}
 @endpush

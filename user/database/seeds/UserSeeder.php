@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         //$users = DB::connection('mysql2')->select(...);
         DB::table('users')->insert([
             'name' => 'Admin',
-            'email' => 'admin@cliner.com',
+            'email' => 'admin@hr.com',
             'password' => bcrypt('123456'),
             'role_id'=> 1,
         ]);

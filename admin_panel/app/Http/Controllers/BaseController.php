@@ -72,7 +72,7 @@ class BaseController extends Controller
      */
     protected function side_menu()
     {
-        $menus_admin = DB::table("menus_admin")->orderBy('_sort', 'asc')->get();
+        $menus_admin = DB::table("menus")->orderBy('_sort', 'asc')->get();
 
         $ap_menu = [];
         foreach ($menus_admin as $menu_admin) {

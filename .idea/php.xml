@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/user/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/user/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/user/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/user/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/user/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/user/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/user/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/user/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/user/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/user/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/user/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/user/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/user/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/user/vendor/composer" />
+      <path value="$PROJECT_DIR$/user/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/user/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/user/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/user/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/user/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/user/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/user/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/user/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/user/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/user/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/user/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/user/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/user/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/user/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/user/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/user/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/user/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/user/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/user/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/user/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/class-loader" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/user/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/user/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/user/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/user/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/user/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/user/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/user/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/user/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/user/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/user/vendor/symfony/var-dumper" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/user/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>
