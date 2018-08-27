@@ -1,15 +1,16 @@
 @extends('layouts.module._master_list')
+<?php $module = "Expense";?>
 @section('head_title')
-    Expenses
+    {{$module}}
 @endsection
 @section('table-header')
     <section class="content-header">
         <h1>
-            Expenses
+            {{$module}}
         </h1>
         <ol class="breadcrumb">
             <li><a href="home"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Expense</li>
+            <li class="active"> {{$module}}</li>
         </ol>
     </section>
 @endsection
@@ -18,7 +19,7 @@
 @endsection
 @section('data-list')
     <?php
-    $module_name = "New Expense";
+    $module_name = $module;
     $module_dash = str_replace(" ", "-", strtolower($module_name));
     $module_udash = str_replace(" ", "_", strtolower($module_name));
     ?>
@@ -26,7 +27,7 @@
     <?php $mid = 'addEducation'; $mtitle = 'Add New Expense Item'?>
     <button type="button" class="btn btn-primary" style=" border: 6px solid #fff;"
             data-toggle="modal" data-target="#modal_add_{{$module_udash}}">
-        Add {{$module_name}}
+        Add New {{$module_name}}
     </button>
     <!-- Button to Open the Modal -->
     <!-- /.box-header -->

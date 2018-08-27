@@ -7,12 +7,12 @@
         <form id="{{$form_id}}" class="form-horizontal" role="form" onsubmit="javascripts(0)">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="item">Item Name</label>
+                    <label for="e_item">Item Name</label>
                     <input type="text" class="form-control" id="e_item" name="e_item"
                            placeholder="Item Name"
                            autocomplete="off" required="required" maxlength="128">
                     <span class="help-block error eMsg_e_item"></span>
-                    <span id="hello"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="purchase">Purchase From</label>
@@ -26,15 +26,15 @@
                     <label for="date">Purchase Date</label>
                     <input type="date" class="form-control" id="e_date" name="e_date"
                            placeholder="Purchase Date"
-                           autocomplete="off" required="required" maxlength="128">
+                           autocomplete="off" required="required" >
                     <span class="help-block error eMsg_e_date"></span>
 
                 </div>
                 <div class="form-group">
-                    <label for="interest">Price</label>
+                    <label for="e_price">Price</label>
                     <input type="text" class="form-control" id="e_price" name="e_price"
                            placeholder="Item Name"
-                           autocomplete="off" required="required" maxlength="128">
+                           autocomplete="off" required="required">
                     <span class="help-block error eMsg_e_price"></span>
 
                 </div>

@@ -1,26 +1,29 @@
 @extends('layouts.module._master_list')
+@section('head_title')
+    Department
+@endsection
 @section('table-header')
     <section class="content-header">
         <h1>
-            Expenses
+            Departments
         </h1>
         <ol class="breadcrumb">
             <li><a href="home"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Expense</li>
+            <li class="active">Department</li>
         </ol>
     </section>
 @endsection
 @section('table-title')
-    Bills
+    Department
 @endsection
 @section('data-list')
     <?php
-    $module_name = "New Expense";
+    $module_name = "New Department";
     $module_dash = str_replace(" ", "-", strtolower($module_name));
     $module_udash = str_replace(" ", "_", strtolower($module_name));
     ?>
     <!-- Button to Open the Add User Modal -->
-    <?php $mid = 'addEducation'; $mtitle = 'Add New Expense Item'?>
+    <?php $mid = 'addDepartment'; $mtitle = 'Add New Department '?>
     <button type="button" class="btn btn-primary" style=" border: 6px solid #fff;"
             data-toggle="modal" data-target="#modal_add_{{$module_udash}}">
         Add {{$module_name}}
@@ -34,10 +37,8 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>Itme Name</th>
-                <th>Purchase From</th>
-                <th>Purchase Date</th>
-                <th>Price</th>
+                <th>Department</th>
+                <th>Designation</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -47,13 +48,13 @@
         </table>
     </div>
     <!--script calling from list.js-->
-    <input type="hidden" id="expense_datatable" value="{{route('list-expense-datatable')}}">
-    <input type="hidden" id="expense_create" value="{{route('expense')}}">
-    <input type="hidden" id="expense_edit" value="{{route('expense')}}">
-    <input type="hidden" id="expense_delete" value="{{route('expense')}}">
+    <input type="hidden" id="department_datatable" value="{{route('list-department-datatable')}}">
+    <input type="hidden" id="department_create" value="{{route('department')}}">
+    <input type="hidden" id="department_edit" value="{{route('department')}}">
+    <input type="hidden" id="department_delete" value="{{route('department')}}">
     @push('modals')
-        @include('modals.expense.modals._add')
-        @include('modals.expense.modals._edit')
+        @include('modals.department.modals._add')
+        @include('modals.department.modals._edit')
     @endpush
 
 @endsection
@@ -65,5 +66,5 @@
     <!-- DataTables -->
     {{ap_datatable("js")}}
     {{--ajax script--}}
-    <script src="{{asset("resources/assets/backjs/expense/list.js")}}"></script>
+    <script src="{{asset("resources/assets/backjs/department/list.js")}}"></script>
 @endpush

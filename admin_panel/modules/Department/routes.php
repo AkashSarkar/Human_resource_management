@@ -5,17 +5,17 @@
  * Date: 5/23/18
  * Time: 2:22 PM
  */
-Route::group(['Module' => 'Expense', 'namespace' => 'Modules\Expense\Controllers', 'middleware' => 'web'], function () {
+Route::group(['Module' => 'Department', 'namespace' => 'Modules\Department\Controllers', 'middleware' => 'web'], function () {
 
 
-    Route::get('expense', 'ExpenseController@index')->name('expense');
-    Route::post('expense', 'ExpenseController@store')->name('expense');
-    Route::get('expense/{id}', 'ExpenseController@show');
-    Route::patch('expense/{id}', 'ExpenseController@update');
-    Route::delete('expense/{id}', 'ExpenseController@destroy');
+    Route::get('department', 'DepartmentController@index')->name('department');
+    Route::post('department', 'DepartmentController@store')->name('department');
+    Route::get('department/{id}', 'DepartmentController@show');
+    Route::patch('department/{id}', 'DepartmentController@update');
+    Route::delete('department/{id}', 'DepartmentController@destroy');
 
 
-    Route::post('list-expense-datatable', 'ExpenseController@jsonDataTable')->name('list-expense-datatable');
+    Route::post('list-department-datatable', 'DepartmentController@jsonDataTable')->name('list-department-datatable');
 
 
 });

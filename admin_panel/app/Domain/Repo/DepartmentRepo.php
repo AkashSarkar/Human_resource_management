@@ -9,7 +9,7 @@
 namespace App\Domain\Repo;
 
 
-interface ExpenseRepo
+interface DepartmentRepo
 {
     function filterDT();
     function totalCountDT();

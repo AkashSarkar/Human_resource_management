@@ -9,59 +9,57 @@
 namespace App\Domain\RepoImpl;
 
 
-use App\Domain\Repo\ExpenseRepo;
+use App\Domain\Repo\DepartmentRepo;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-use Modules\Expense\Models\ExpenseModel;
+use Modules\Department\Models\DepartmentModel as model;
 
-class ExpenseRepoImpl implements ExpenseRepo
+class DepartmentRepoImpl implements DepartmentRepo
 {
 
     public function filterDT()
     {
-        return ExpenseModel::select('id', 'item','purchase_from','purchase_date','price');
+        return model::select('id', 'department','designation');
     }
 
     public function totalCountDT()
     {
-        return ExpenseModel::count();
+        return model::count();
     }
 
     public function filterSingleDT()
     {
-        return ExpenseModel::select('id');
+        return model::select('id');
     }
 
     public function create($obj)
     {
-        return ExpenseModel::create([
-            'item' => $obj['item'],
-            'purchase_from' => $obj['purchase'],
-            'purchase_date' => $obj['date'],
-            'price' => $obj['price'],
+        return model::create([
+            'department' => $obj['department'],
+            'designation' => $obj['designation'],
+
         ]);
     }
     public function destroy($obj)
     {
-        $del = ExpenseModel::where('id', $obj->id)
+        $del = model::where('id', $obj->id)
             ->count();
         if($del)
         {
-            $del = ExpenseModel::where('id', $obj->id)
+            $del = model::where('id', $obj->id)
                 ->delete();
         }
         return $del;
     }
     public function update($obj)
     {
-        $edu=ExpenseModel::find($obj->id);
+        $edu=model::find($obj->id);
         if($edu)
         {
-            $edu->item=$obj->e_item;
-            $edu->purchase_from=$obj->e_purchase;
-            $edu->purchase_date=$obj->e_date;
-            $edu->price=$obj->e_price;
+            $edu->designation=$obj->e_designation;
+            $edu->department=$obj->e_department;
+
             $edu->save();
         }
         return $edu;
@@ -69,7 +67,7 @@ class ExpenseRepoImpl implements ExpenseRepo
     public function show($obj)
     {
 
-        $edu = ExpenseModel::select('name')->where('id', $obj->id);
+        $edu = model::select('name')->where('id', $obj->id);
         return $edu;
     }
 }

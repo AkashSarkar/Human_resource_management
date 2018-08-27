@@ -19,7 +19,7 @@
                     <span class="help-block error eMsg_purchase"></span>
                 </div>
                 <div class="form-group">
-                    <label for="interest">Purchase Date</label>
+                    <label for="date">Purchase Date</label>
                     <input type="date" class="form-control" id="date" name="date" placeholder="Date"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_date"></span>

@@ -1,6 +1,6 @@
 @extends("layouts.module._master_modal")
 @section('modal-id'){{"modal_add_".$module_udash}}@overwrite
-@section('modal-title'){{"Add ".$module_name}}@overwrite
+@section('modal-title'){{"Add New ".$module_name}}@overwrite
 <?php $form_id = "add-" . $module_dash . "-form"; ?>
 @section('modal-form')
     <div class="box-content">
@@ -8,7 +8,7 @@
             <div class="box-body">
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="First Name"
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title"
                            autocomplete="off" required="required" maxlength="128">
                     <span class="help-block error eMsg_title"></span>
                 </div>
@@ -32,5 +32,5 @@
 @overwrite
 @section('modal-footer-action')
     <button type="button" class="btn btn-danger pull-left" data-dismiss="modal" id="{{$module_dash}}">CANCEL</button>
-    <button type="button" class="btn btn-primary" id="add-{{$module_dash}}-btn">Add {{$module_name}}</button>
+    <button type="button" class="btn btn-primary" id="add-{{$module_dash}}-btn">Add New {{$module_name}}</button>
 @overwrite

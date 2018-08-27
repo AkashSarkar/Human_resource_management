@@ -134,29 +134,27 @@ class NoticeController extends BaseController
             }
         }catch (\Exception $e) {
             ErrorR::efail($e);
-            $responseData["success"] = False;
-            $responseData["message"] = "Technical Error";
-            $responseData['status_code'] = $e->getCode();
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
         } finally {
             Performance::log();
         }
-        $responseData["success"] = $s;
-        $responseData["message"] = $m;
-        $responseData['status_code'] = $status;
-        return respJOk($responseData);
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
     }
 
     public function update(Request $request)
     {
         try{
             $inputs = array(
-                'title' => $request->e_title,
-                'description' => $request->e_description,
+                'e_title' => $request->e_title,
+                'e_description' => $request->e_description,
             );
 
             $rules = array(
-                'title' => "required|max:100",
-                'description' => "required|max:300",
+                'e_title' => "required|max:100",
+                'e_description' => "required|max:300",
 
             );
             $validate = Validator::make($inputs, $rules);
@@ -176,16 +174,14 @@ class NoticeController extends BaseController
             }
         }catch (\Exception $e) {
             ErrorR::efail($e);
-            $responseData["success"] = False;
-            $responseData["message"] = "Technical Error";
-            $responseData['status_code'] = $e->getCode();
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
         } finally {
             Performance::log();
         }
-        $responseData["success"] = $s;
-        $responseData["message"] = $m;
-        $responseData['status_code'] = $status;
-        return respJOk($responseData);
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
     }
     public function destroy(Request $request)
     {

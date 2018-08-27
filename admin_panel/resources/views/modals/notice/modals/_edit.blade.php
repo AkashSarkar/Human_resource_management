@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <label for="e_description">Description</label>
                     <input type="text" class="form-control" id="e_description" name="e_description"
-                           placeholder="purchase"
+                           placeholder="Description"
                            autocomplete="off" required="required" maxlength="128">
                     <span class="help-block error eMsg_e_description"></span>
 

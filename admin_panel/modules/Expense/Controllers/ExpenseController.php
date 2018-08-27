@@ -108,15 +108,15 @@ class ExpenseController extends BaseController
         try{
             $inputs = array(
                 'item' => $request->item,
-                'purchase_from' => $request->purchase,
-                'purchase_date' => $request->date,
+                'purchase' => $request->purchase,
+                'date' => $request->date,
                 'price' => $request->price,
             );
 
             $rules = array(
                 'item' => "required|max:128",
-                'purchase_from' => "required|max:128",
-                'purchase_date' => "required",
+                'from' => "required",
+                'date' => "required",
                 'price' => "required",
 
             );
@@ -138,32 +138,30 @@ class ExpenseController extends BaseController
             }
         }catch (\Exception $e) {
             ErrorR::efail($e);
-            $responseData["success"] = False;
-            $responseData["message"] = "Technical Error";
-            $responseData['status_code'] = $e->getCode();
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
         } finally {
             Performance::log();
         }
-        $responseData["success"] = $s;
-        $responseData["message"] = $m;
-        $responseData['status_code'] = $status;
-        return respJOk($responseData);
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
     }
 
     public function update(Request $request)
     {
         try{
             $inputs = array(
-                'item' => $request->e_item,
-                'purchase_from' => $request->e_purchase,
-                'purchase_date' => $request->e_date,
-                'price' => $request->e_price,
+                'e_item' => $request->e_item,
+                'e_purchase' => $request->e_purchase,
+                'e_date' => $request->e_date,
+                'e_price' => $request->e_price,
             );
             $rules = array(
-                'item' => "required|max:128",
-                'purchase_from' => "required|max:128",
-                'purchase_date' => "required",
-                'price' => "required",
+                'e_item' => "required|max:128",
+                'e_purchase' => "required|max:128",
+                'e_date' => "required",
+                'e_price' => "required",
             );
             $validate = Validator::make($inputs, $rules);
             if ($validate->fails()) {
@@ -182,16 +180,14 @@ class ExpenseController extends BaseController
             }
         }catch (\Exception $e) {
             ErrorR::efail($e);
-            $responseData["success"] = False;
-            $responseData["message"] = "Technical Error";
-            $responseData['status_code'] = $e->getCode();
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
         } finally {
             Performance::log();
         }
-        $responseData["success"] = $s;
-        $responseData["message"] = $m;
-        $responseData['status_code'] = $status;
-        return respJOk($responseData);
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
     }
     public function destroy(Request $request)
     {
@@ -221,16 +217,15 @@ class ExpenseController extends BaseController
             }
         }catch (\Exception $e) {
             ErrorR::efail($e);
-            $responseData["success"] = False;
-            $responseData["message"] = "Technical Error";
-            $responseData['status_code'] = $e->getCode();
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
         } finally {
             Performance::log();
         }
-        $responseData["success"] = $s;
-        $responseData["message"] = $m;
-        $responseData['status_code'] = $status;
-        return respJOk($responseData);
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
+
     }
 
     }
