@@ -1,7 +1,4 @@
 @extends('layouts.module._master_list')
-@section('head_title')
-    Expenses
-@endsection
 @section('table-header')
     <section class="content-header">
         <h1>

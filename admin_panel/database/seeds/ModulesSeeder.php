@@ -25,12 +25,16 @@ class ModulesSeeder extends Seeder
         ]);
 
         DB::table('modules')->insert([
-            'name' => 'Company',
-            'tag' => 'company'
-        ]);
-        DB::table('modules')->insert([
             'name' => 'Expense',
             'tag' => 'expense'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Notice',
+            'tag' => 'notice'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Department',
+            'tag' => 'department'
         ]);
 
     }
