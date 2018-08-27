@@ -15,7 +15,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <div class="menu-list-search">
        <div class="input-group  sidebar-form">
-        <input type="text" class=" form-control" placeholder="Search Menu"/>
+        <input type="text" class="form-control" placeholder="Search Menu"/>
         <span class="input-group-btn">
           <button name="search" id="search-btn" class="btn btn-flat">
             <i class="fa fa-search"></i>
