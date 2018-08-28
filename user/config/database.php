@@ -77,11 +77,11 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => 'admin_',
+            'prefix' => 'user_',
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-        'pgsql_user' => [
+        'pgsql_admin' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
@@ -89,11 +89,10 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => '',
+            'prefix' => 'admin_',
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
         'pgsql_front' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

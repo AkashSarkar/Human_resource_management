@@ -12,10 +12,6 @@ class ModulesSeeder extends Seeder
     public function run()
     {
         DB::table('modules')->insert([
-            'name' => 'User',
-            'tag' => 'user'
-        ]);
-        DB::table('modules')->insert([
             'name' => 'Permissions',
             'tag' => 'permissions'
         ]);
@@ -27,37 +23,19 @@ class ModulesSeeder extends Seeder
             'name' => 'Dashboard',
             'tag' => 'dashboard'
         ]);
-        DB::table('modules')->insert([
-            'name' => 'Setting',
-            'tag' => 'setting'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Like',
-            'tag' => 'like'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Industry',
-            'tag' => 'industry'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Profession',
-            'tag' => 'profession'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Education',
-            'tag' => 'education'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Company',
-            'tag' => 'company'
-        ]);
-        DB::table('modules')->insert([
-            'name' => 'Post',
-            'tag' => 'post'
-        ]);
+
         DB::table('modules')->insert([
             'name' => 'Expense',
             'tag' => 'expense'
         ]);
+        DB::table('modules')->insert([
+            'name' => 'Notice',
+            'tag' => 'notice'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Department',
+            'tag' => 'department'
+        ]);
+
     }
 }

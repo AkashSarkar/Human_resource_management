@@ -22,10 +22,6 @@
 @include('template._footer')
 <!--./footer-->
 
-    <!-- Control Sidebar -->
-@include('template._controlSidebar')
-<!-- /.control-sidebar -->
-
 
     <!-- Content Wrapper. Contains page content -->
 </div>

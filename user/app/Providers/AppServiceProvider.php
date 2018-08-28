@@ -40,20 +40,13 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        $this->app->bind('App\Domain\Repo\PostRepo',
-            'App\Domain\RepoImpl\PostRepoImpl');
         $this->app->bind('App\Domain\Repo\UserRepo',
             'App\Domain\RepoImpl\UserRepoImpl');
-        $this->app->bind('App\Domain\Repo\IndustryRepo',
-            'App\Domain\RepoImpl\IndustryRepoImpl');
-        $this->app->bind('App\Domain\Repo\EducationRepo',
-            'App\Domain\RepoImpl\EducationRepoImpl');
-        $this->app->bind('App\Domain\Repo\ProfessionRepo',
-            'App\Domain\RepoImpl\ProfessionRepoImpl');
-        $this->app->bind('App\Domain\Repo\CompanyRepo',
-            'App\Domain\RepoImpl\CompanyRepoImpl');
-        $this->app->bind('App\Domain\Repo\InterestRepo',
-            'App\Domain\RepoImpl\InterestRepoImpl');
-
+        $this->app->bind('App\Domain\Repo\ExpenseRepo',
+            'App\Domain\RepoImpl\ExpenseRepoImpl');
+        $this->app->bind('App\Domain\Repo\NoticeRepo',
+            'App\Domain\RepoImpl\NoticeRepoImpl');
+        $this->app->bind('App\Domain\Repo\DepartmentRepo',
+            'App\Domain\RepoImpl\DepartmentRepoImpl');
     }
 }

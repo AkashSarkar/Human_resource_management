@@ -15,7 +15,7 @@
     </section>
 @endsection
 @section('table-title')
-    Bills
+    <h1>{{$module}}</h1>
 @endsection
 @section('data-list')
     <?php

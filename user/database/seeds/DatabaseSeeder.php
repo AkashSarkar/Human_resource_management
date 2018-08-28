@@ -14,14 +14,12 @@ class DatabaseSeeder extends Seeder
         $this->call(MenuSeeder::class);
         $this->call(ModulesSeeder::class);
         $this->call(RolesTableSeeder::class);
-        $this->call(AccessSeeder::class);
-        $this->call([
-            EducationsSeeder::class,
-            InterestsSeeder::class,
-            ProfessionsSeeder::class,
-            IndustriesSeeder::class,
-            UserSeeder::class,
-        ]);
+//        $this->call([
+//            UserSeeder::class,
+//            ExpenseSeeder::class,
+//            NoticeSeeder::class,
+//            DepartmentSeeder::class,
+//        ]);
 
     }
 }
