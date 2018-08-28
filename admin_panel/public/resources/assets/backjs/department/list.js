@@ -15,8 +15,8 @@ $(function () {
             "stateDuration": 60,
             "bAutoWidth": true,
             "lengthMenu": [
-                [50, 100, 200],
-                [50, 100, 200]
+                [10, 100, 200],
+                [10, 100, 200]
             ],
             "searching": true,
             "processing": true,
@@ -26,7 +26,7 @@ $(function () {
             // "initComplete": customInitCompelte,
             // "drawCallback": customInitCompelete,
             "ajax": {
-                'type': 'GET',
+                'type': 'POST',
                 'url': $("#department_datatable").val(),
                 'data': data,
             },
@@ -47,6 +47,20 @@ $(function () {
                 },
                 {
                     "targets": 2,
+                    'render': function (data, type, row, meta) {
+
+                        var x = {};
+                        x = (JSON.parse(data));
+                        var html = '';
+                        html += '<div> <ul>';
+                        for (var i = 0; i < x.length; i++) {
+                            html += '<li>'+x[i]+'</li>';
+                        }
+                        html += '</ul></div>';
+                        return html;
+
+
+                    }
 
                 },
                 {
@@ -58,50 +72,201 @@ $(function () {
                     'render': function (data, type, row, meta) {
                         var html = '';
                         html += '<div class="btn-group" role="group" >';
-                        html += '<button type="button" class="btn btn-sm btn-warning edit" data-toggle="modal" data-target="#modal_edit_'+module_udash+'" value="'+row.id+'"><i class="fa fa-edit"></i></button>'
-                        html += '<button type="button" class="btn btn-sm btn-danger del" value="'+row.id+'"> <i class="fa fa-trash"></i></button>'
-                        html +='<div>';
+                        html += '<button type="button" class="btn btn-sm btn-warning edit" data-toggle="modal" data-target="#modal_edit_' + module_udash + '" value="' + row.id + '"><i class="fa fa-edit"></i></button>'
+                        html += '<button type="button" class="btn btn-sm btn-danger del" value="' + row.id + '"> <i class="fa fa-trash"></i></button>'
+                        html += '<div>';
 
                         return html;
 
 
                     }
                 }
+
             ]
         });
-        let id='';
-        /*get value from datatable*/
-        var oTable =  $('#listDataTable').dataTable();
-        $('#listDataTable').on('click', 'tr', function(){
-            var oData = oTable.fnGetData(this);
-             id=oData.id;
-             $("#e_first_name").val(oData.fName);
-             $("#e_last_name").val(oData.lName);
-             $("#e_gender").val(oData.gender);
-             $("#e_dob").val(oData.dob);
-             if(oData.status) {
-                 $("#e_status option[value=1]").attr('selected','selected');
-             }
-             else
-             {
-                 $("#e_status option[value=0]").attr('selected','selected');
-             }
-             $("#e_role_id").val(oData.role);
+        //new Department add
+
+        //variables
+        var html='';
+        var max_des=5; //maximum designation
+        var c=1;
+
+        //Add rows to the from
+        $("#add_des").click(function () {
+            html='<div><input type="text" class="form-control" id="designation'+c+'" name="designation" placeholder="Designation" autocomplete="off" required="required">\n' +
+                '                    <a href="#" class="text-bold btn-sm btn-danger" id="r_des"> - Remove designation </a></div>';
+           if(c<max_des)
+           {
+               $("#n_des").append("<p>"+html+"</p>");
+               c++;
+           }
 
         });
-        /*delete*/
-        $("#listDataTable tbody").on("click","button.del",function () {
-            var b=$(this);
-            let user_id =$(this).val();
-            if(confirm("Are you want to delete this data?")){
+
+        //Remove rows from the from
+        $("#n_des").on('click','#r_des',function (e) {
+            $(this).parent('div').remove();
+            c--;
+        });
+
+
+        //populate values from the  row
+        var desig=[];
+
+        $('#add-' + module_dash + '-btn').on('click', function () {
+            $('#' + add_form_id + ' .error').html("");
+            $('#' + add_form_id + ' .form-group').removeClass("has-error");
+            var custom_form = $("#" + add_form_id);
+            var custom_params = custom_form.serializeArray();
+            var custom_formData = new FormData();
+            var elements = document.getElementById(add_form_id).elements;
+            var obj = {};
+            for (var i = 0; i < elements.length; i++) {
+                var item = elements.item(i);
+                if(i==0)
+                obj[item.id] = item.value;
+                else
+                    desig[i-1]=item.value;
+            }
+            obj['designation']= JSON.stringify(desig);
+            // console.log(obj);
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'POST',
+                url: $('#department_create').val(),
+                data: obj,
+                statusCode: customStatusCodeRes,
+                success: function (data) {
+                    // console.log(data);
+                    // $('#' + module_dash).click();
+                    $('#listDataTable').DataTable().ajax.reload();
+                    $('.close').click();
+                    $(".form-control").val(' ');
+                    $("[id*='r_des']").each(function(){
+                        $(this).parent("div").remove();
+                    });
+
+                },
+                error: function (data) {
+                    errorForm(data, add_form_id);
+                }
+            });
+        });
+        //assign in edit from
+
+        let id = '';
+        let des_len=0,e_desig=[];
+        /*get value from datatable*/
+        var oTable = $('#listDataTable').dataTable();
+        $('#listDataTable').on('click', 'tr', function () {
+            var oData = oTable.fnGetData(this);
+            id = oData.id;
+            $("#e_department").val(oData.department);
+            var designation=[];
+            designation=JSON.parse(oData.designation);
+            des_len=designation.length;
+            for(var i=0;i<designation.length;i++)
+            {
+                html='<div><input type="text" class="form-control" id="e_designation'+i+'" name="e_designation" value="'+designation[i]+'" placeholder="Designation" autocomplete="off" required="required">\n'
+                  if(i>0)
+                   html+= '                    <a href="#" class="text-bold btn-sm btn-danger" id="r_e_des" > - Remove designation </a></div>';
+                $("#n_e_des").append("<p>"+html+"</p>");
+
+            }
+
+
+
+        });
+
+        //update
+        //clear the appendes field
+        $(".close").click(function () {
+            $("[name*='e_designation']").each(function(){
+                $(this).parent("div").remove();
+            });
+
+        });
+        $("#e"+module_dash).click(function () {
+            $("[name*='e_designation']").each(function(){
+                $(this).parent("div").remove();
+            });
+
+        });
+        $("#add_e_des").click(function () {
+            html='<div><input type="text" class="form-control" id="e_designation'+des_len+'" name="e_designation" placeholder="Designation" autocomplete="off" required="required">\n'
+                html+= '                    <a href="#" class="text-bold btn-sm btn-danger" id="r_e_des" > - Remove designation </a></div>';
+            if(des_len<max_des)
+            {
+                $("#n_e_des").append("<p>"+html+"</p>");
+                des_len++;
+                // console.log(des_len);
+            }
+
+        });
+
+        //Remove rows to the from
+        $("#n_e_des").on('click','#r_e_des',function (e) {
+            $(this).parent('div').remove();
+            des_len--;
+        });
+
+        $('#edit-' + module_dash + '-btn').on('click', function () {
+            $('#' + edit_form_id + ' .error').html("");
+            $('#' + edit_form_id + ' .form-group').removeClass("has-error");
+            var custom_form = $("#" + edit_form_id);
+            var custom_params = custom_form.serializeArray();
+            var custom_formData = new FormData();
+            var elements = document.getElementById(edit_form_id).elements;
+            var obj = {};
+            e_desig=[];
+            obj['id'] = id;
+            for (var i = 0; i < elements.length; i++) {
+                var item = elements.item(i);
+                if(i===0)
+                    obj[item.id] = item.value;
+                else
+                    e_desig[i-1]=item.value;
+            }
+            obj['e_designation']= JSON.stringify(e_desig);
+            console.log(obj);
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'PATCH',
+                url: $('#department_edit').val() + '/' + id,
+                data: obj,
+                statusCode: customStatusCodeRes,
+                success: function (data) {
+                    console.log('edit');
+                    console.log(data);
+                    $('#listDataTable').DataTable().ajax.reload();
+                    $("[name*='e_designation']").each(function(){
+                        $(this).parent("div").remove();
+                    });
+                    $('#e' + module_dash).click();
+                },
+                error: function (data) {
+                    errorForm(data, edit_form_id);
+                }
+            });
+        });
+
+        //delete
+        $("#listDataTable tbody").on("click", "button.del", function () {
+            var b = $(this);
+            let id = $(this).val();
+            if (confirm("Are you want to delete this data?")) {
                 $.ajax({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                     type: 'DELETE',
-                    url: $('#department_delete').val(),
-                    data:{
-                        id:user_id
+                    url: $('#department_delete').val() + '/' + id,
+                    data: {
+                        id: id
                     },
                     statusCode: customStatusCodeRes,
                     success: function (data) {
@@ -116,118 +281,6 @@ $(function () {
                 });
             }
         });
-
-            /*Add data*/
-
-        $('#add-' + module_dash + '-btn').on('click', function () {
-            $('#' + add_form_id + ' .error').html("");
-            $('#' + add_form_id + ' .form-group').removeClass("has-error");
-            var custom_form = $("#" + add_form_id);
-            var custom_params = custom_form.serializeArray();
-            //var custom_files = $('#' + add_form_id + ' .file')[0].files;
-            var custom_formData = new FormData();
-            // console.log( $('#user_data').val());
-            // for (var i = 0; i < custom_files.length; i++) {
-            //     custom_formData.append("file", custom_files[i]);
-            // }
-
-            // $(custom_params).each(function (custom_index, custom_element) {
-            //     custom_formData.append(custom_element.id, custom_element.value);
-            // });
-            var elements = document.getElementById(add_form_id).elements;
-            var obj = {};
-            for (var i = 0; i < elements.length; i++) {
-                var item = elements.item(i);
-                obj[item.id] = item.value;
-            }
-            //console.log(obj);
-            $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                type: 'POST',
-                url: $('#user_create').val(),
-                data: obj,
-                statusCode: customStatusCodeRes,
-                success: function (data) {
-                    console.log(data);
-                    $('#' + module_dash).click();
-                    $('#listDataTable').DataTable().ajax.reload();
-                },
-                error: function (data) {
-                    errorForm(data, add_form_id);
-                }
-            });
-        });
-           /*edit data*/
-        $('#edit-' + module_dash + '-btn').on('click', function () {
-            $('#' + edit_form_id + ' .error').html("");
-            $('#' + edit_form_id + ' .form-group').removeClass("has-error");
-            var custom_form = $("#" + edit_form_id);
-            var custom_params = custom_form.serializeArray();
-            //var custom_files = $('#' + add_form_id + ' .file')[0].files;
-            var custom_formData = new FormData();
-            // console.log( $('#user_data').val());
-            // for (var i = 0; i < custom_files.length; i++) {
-            //     custom_formData.append("file", custom_files[i]);
-            // }
-
-            // $(custom_params).each(function (custom_index, custom_element) {
-            //     custom_formData.append(custom_element.id, custom_element.value);
-            // });
-
-            var elements = document.getElementById(edit_form_id).elements;
-            var obj = {};
-
-            obj['id']=id;
-            for (var i = 0; i < elements.length; i++) {
-                var item = elements.item(i);
-                obj[item.id] = item.value;
-            }
-            console.log(obj);
-            $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                type: 'PATCH',
-                url: $('#user_edit').val(),
-                data: obj,
-                statusCode: customStatusCodeRes,
-                success: function (data) {
-                    //console.log(data);
-                    console.log('edit');
-                    console.log(data);
-                    $('#listDataTable').DataTable().ajax.reload();
-                    $('#e' + module_dash).click();
-                },
-                error: function (data) {
-                    errorForm(data, edit_form_id);
-                }
-            });
-        });
-
-        /*Role user*/
-
-            $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                type: 'GET',
-                url: $('#role_user').val(),
-                success: function (data) {
-                    //console.log(data);
-                    $.each(data,function(key, value)
-                    {
-                        $("#e_role_id").append('<option value=' + key + '>' + value + '</option>');
-
-                        $("#role_id").append('<option value=' + key + '>' + value + '</option>');
-                    });
-                },
-                error: function (data) {
-                    errorForm(data, edit_form_id);
-                }
-            });
-
 
 
     });

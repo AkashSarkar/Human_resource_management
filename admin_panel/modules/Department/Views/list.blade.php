@@ -1,32 +1,33 @@
 @extends('layouts.module._master_list')
+<?php $module = "Department";?>
 @section('head_title')
-    Department
+    {{$module}}
 @endsection
 @section('table-header')
     <section class="content-header">
         <h1>
-            Departments
+            {{$module}}
         </h1>
         <ol class="breadcrumb">
             <li><a href="home"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Department</li>
+            <li class="active"> {{$module}}</li>
         </ol>
     </section>
 @endsection
 @section('table-title')
-    Department
+    Bills
 @endsection
 @section('data-list')
     <?php
-    $module_name = "New Department";
+    $module_name = $module;
     $module_dash = str_replace(" ", "-", strtolower($module_name));
     $module_udash = str_replace(" ", "_", strtolower($module_name));
     ?>
     <!-- Button to Open the Add User Modal -->
-    <?php $mid = 'addDepartment'; $mtitle = 'Add New Department '?>
+    <?php $mid = 'adddepartment'; $mtitle = 'Add New department Item'?>
     <button type="button" class="btn btn-primary" style=" border: 6px solid #fff;"
             data-toggle="modal" data-target="#modal_add_{{$module_udash}}">
-        Add {{$module_name}}
+        Add New {{$module_name}}
     </button>
     <!-- Button to Open the Modal -->
     <!-- /.box-header -->

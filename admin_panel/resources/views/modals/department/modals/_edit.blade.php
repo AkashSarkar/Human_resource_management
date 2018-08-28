@@ -7,59 +7,18 @@
         <form id="{{$form_id}}" class="form-horizontal" role="form" onsubmit="javascripts(0)">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="e_first_name" name="e_first_name"
-                           placeholder="First Name"
-                           autocomplete="off" required="required" maxlength="128">
-                    <span class="help-block error eMsg_e_first_name"></span>
-                    <span id="hello"></span>
-                </div>
-                <div class="form-group">
-                    <label for="Last Name">Last Name</label>
-                    <input type="text" class="form-control" id="e_last_name" name="e_last_name" placeholder="Last Name"
-                           autocomplete="off" required="required" maxlength="128">
-                    <span class="help-block error eMsg_e_last_name"></span>
-                </div>
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <input type="text" class="form-control" id="e_gender" name="e_gender" placeholder="gender"
+                    <label for="e_department">Department</label>
+                    <input type="text" class="form-control" id="e_department" name="e_department" placeholder="Department"
                            autocomplete="off" required="required">
-                    <span class="help-block error eMsg_e_gender"></span>
+                    <span class="help-block error eMsg_e_department"></span>
                 </div>
                 <div class="form-group">
-                    <label>Date of Birth :</label>
-
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="date" class="form-control pull-right" id="e_dob" name="e_dob">
-                    </div>
-                    <span class="help-block error eMsg_e_dob"></span>
-                    <!-- /.input group -->
+                    <label for="designation">Designation</label>
+                    <br>
+                    <p id="n_e_des"></p>
+                    <a href="#" class="text-bold btn-sm btn-success" id="add_e_des"> + Add more designation</a>
+                    <span class="help-block error eMsg_e_designation"></span>
                 </div>
-                <div class="form-group">
-                    <label for="status">Status</label>
-                    {{--<input type="text" class="form-control" id="e_status" name="e_status" placeholder="Status"
-                           autocomplete="off" required="required">--}}
-                    <div>
-                        <select class="form-control " style="width: 58rem;" id="e_status">
-                            <option value="1">True</option>
-                            <option value="0">False</option>
-                        </select>
-                    </div>
-                    <span class="help-block error eMsg_e_status"></span>
-                </div>
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    {{--<input type="text" class="form-control" id="e_role_id" name="e_role_id" placeholder="Role Id"--}}
-                           {{--autocomplete="off" required="required">--}}
-                    <select class="form-control " style="width: 58rem;" id="e_role_id">
-                    </select>
-                    <span class="help-block error eMsg_e_role_id"></span>
-                </div>
-
-
             </div>
             <!-- /.box-body -->
         </form>

@@ -2,24 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: deepita
- * Date: 5/24/18
- * Time: 12:43 PM
+ * Date: 5/29/18
+ * Time: 3:06 PM
  */
 
 namespace Modules\Department\Controllers;
 
+use App\Domain\Repo\DepartmentRepo;
 use App\Http\Controllers\BaseController;
 use App\Models\Performance;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\In;
 use App\Models\ErrorR;
-use DB;
 
-//Repo
-use App\Domain\Repo\DepartmentRepo;
-//use Modules\User\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class DepartmentController extends BaseController
 {
@@ -27,6 +25,7 @@ class DepartmentController extends BaseController
 
     public function __construct(DepartmentRepo $departmentRepo)
     {
+
         $this->middleware('auth');
         parent::__construct();
         $this->departmentRepo = $departmentRepo;
@@ -34,12 +33,17 @@ class DepartmentController extends BaseController
 
     public function index()
     {
+//        $model = $this->departmentRepo->filterDT();
+//        dd($model);
         return view('Department::list');
     }
 
-    public function getUserData(Request $request)
+    public function jsonDataTable(Request $request)
     {
         $responseData = [];
+        $responseData['title'] = 'Department';
+        $responseData['status_code'] = 200;
+
         try {
 
             $columns = array(
@@ -49,7 +53,6 @@ class DepartmentController extends BaseController
             );
             $columns_condition = array(
                 'department' => "like",
-                'designation'=>"like",
             );
             $foreign_col = [
 
@@ -62,11 +65,10 @@ class DepartmentController extends BaseController
             $glob_searchable_col = [
                 "department" => [
                     0 => 'department',
-                    1 => 'designation',
-
                 ]
 
             ];
+
             $glob_main_table = "department";
             $totalData = $this->departmentRepo->totalCountDT();
             $totalFilteredSync = false;
@@ -77,10 +79,12 @@ class DepartmentController extends BaseController
             $model_count = $this->departmentRepo->filterSingleDT();
 
             $get_datatable_data = get_datatable_data($request, $model, $columns, $foreign_col, $foreign_table, $glob_searchable_col, $columns_condition, $glob_main_table, $model_count, $totalFilteredSync, $totalFiltered);
+
             $dataCast = [];
-            foreach ($get_datatable_data['data'] as $value  ) {
+            foreach ($get_datatable_data['data'] as $value) {
                 $dataCast[] = $value;
             }
+
             $responseData['draw'] = intval($request->input('draw'));
             $responseData['recordsTotal'] = $totalData;
             $responseData['recordsFiltered'] = $get_datatable_data['recordsFiltered'];;
@@ -88,123 +92,130 @@ class DepartmentController extends BaseController
 
 
         } catch (\Exception $e) {
-//            ErrorR::efail($e);
-//            $responseData["success"] = False;
-//            $responseData["message"] = "Technical Error";
-            return $e->getMessage();
+            ErrorR::efail($e);
+            $responseData["success"] = False;
+            $responseData["message"] = "Technical Error";
+            $responseData['status_code'] = $e->getCode();
+        } finally {
+            Performance::log();
         }
+//        $responseData['dataQuery'] = [DB::getQueryLog(), DB::connection('pgsql_front')->getQueryLog()];
+//        return $this->resp($responseData, $responseData['status_code']);
         return response()->json($responseData);
-
     }
-
     public function store(Request $request)
     {
-        $inputs = array(
-            'first_name' => $request->first_name,
-            'last_name' => $request->last_name,
-            'gender' => $request->gender,
-            'dob' => $request->dob,
-            'status' => $request->status,
-            'role_id' => $request->role_id,
+        try{
+            $inputs = array(
+                'department' => $request->department,
+                'designation' => $request->designation,
+            );
 
-        );
+            $rules = array(
+                'department' => "required|max:128",
+            );
+            $validate = Validator::make($inputs, $rules);
 
-        $rules = array(
-            'first_name' => "required|max:128",
-            'last_name' => "required|max:128",
-            'status' => "required",
-            'role_id' => "required",
-        );
-        $validate = Validator::make($inputs, $rules);
-
-        if ($validate->fails()) {
-            $errors = $validate->errors();
-            $errors = json_decode($errors);
-            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-        } else {
-            $registered_user = $this->departmentRepo->save($request);
-            return response()->json(['success' => TRUE], 200);
+            if ($validate->fails()) {
+                $errors = $validate->errors();
+                $errors = json_decode($errors);
+                $s=FALSE;
+                $m=$errors;
+                $status=422;
+//            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
+            } else {
+                $interest = $this->departmentRepo->create($request);
+                $s=TRUE;
+                $m='Successful';
+                $status=200;
+//            return response()->json(['success' => TRUE], 200);
+            }
+        }catch (\Exception $e) {
+            ErrorR::efail($e);
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
+        } finally {
+            Performance::log();
         }
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
     }
 
-    public function edit(Request $request)
+    public function update(Request $request)
     {
-        $inputs = array(
-            'first_name' => $request->e_first_name,
-            'last_name' => $request->e_last_name,
-            'gender' => $request->e_gender,
-            'dob' => $request->e_dob,
-            'status' => $request->e_status,
-            'role_id' => $request->e_role_id,
+        try{
+            $inputs = array(
+                'e_department' => $request->e_department,
+                'e_designation' => $request->e_designation,
+            );
 
-        );
-
-        $rules = array(
-            'first_name' => "max:128",
-            'last_name' => "max:128"
-        );
-        $validate = Validator::make($inputs, $rules);
-
-        if ($validate->fails()) {
-            $errors = $validate->errors();
-            $errors = json_decode($errors);
-            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-        } else {
-            $user = $this->departmentRepo->update($request);
-            return response()->json(['success' => TRUE], 200);
+            $rules = array(
+                'e_department' => "required|max:128",
+            );
+            $validate = Validator::make($inputs, $rules);
+            if ($validate->fails()) {
+                $errors = $validate->errors();
+                $errors = json_decode($errors);
+                $s=FALSE;
+                $m=$errors;
+                $status=422;
+//            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
+            } else {
+                $ind = $this->departmentRepo->update($request);
+                $s=TRUE;
+                $m='Successful';
+                $status=200;
+//            return response()->json(['success' => TRUE], 200);
+            }
+        }catch (\Exception $e) {
+            ErrorR::efail($e);
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
+        } finally {
+            Performance::log();
         }
-    }
 
-    public function getUser(Request $request)
+        return response()->json(['success' => $s, 'message' => $m,], $status);
+    }
+    public function destroy(Request $request)
     {
-        $inputs = array(
-            'id' => $request->id,
-        );
+        try{
+            $inputs = array(
+                'id' => $request->id,
+            );
 
-        $rules = array(
-            'id' => "required"
-        );
-        $validate = Validator::make($inputs, $rules);
+            $rules = array(
+                'id' => "required"
+            );
+            $validate = Validator::make($inputs, $rules);
 
-        if ($validate->fails()) {
-            $errors = $validate->errors();
-            $errors = json_decode($errors);
-            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-        } else {
-            $user = $this->departmentRepo->getOneUser($request);
-            return response()->json(['success' => TRUE, 'user' => $user], 200);
+            if ($validate->fails()) {
+                $errors = $validate->errors();
+                $errors = json_decode($errors);
+                $s=FALSE;
+                $m=$errors;
+                $status=422;
+//            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
+            } else {
+                $interest = $this->departmentRepo->destroy($request);
+                $s=TRUE;
+                $m='Successful';
+                $status=200;
+//            return response()->json(['success' => TRUE, 'interest' => $interest], 200);
+            }
+        }catch (\Exception $e) {
+            ErrorR::efail($e);
+            $s = False;
+            $m = "Technical Error";
+            $status = $e->getCode();
+        } finally {
+            Performance::log();
         }
+
+        return response()->json(['success' => $s, 'message' => $m,], $status);
+
     }
 
-    public function delete(Request $request)
-    {
-        $inputs = array(
-            'id' => $request->id,
-        );
-
-        $rules = array(
-            'id' => "required"
-        );
-        $validate = Validator::make($inputs, $rules);
-
-        if ($validate->fails()) {
-            $errors = $validate->errors();
-            $errors = json_decode($errors);
-            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-        } else {
-            $user = $this->departmentRepo->delete($request);
-            return response()->json(['success' => TRUE, 'user' => $user], 200);
-        }
     }
-
-    public function getRole()
-    {
-        $roles = DB::connection('pgsql_front')->table('roles')->get();
-        $response = [];
-        foreach ($roles as $role) {
-            $response[$role->id] = $role->role;
-        }
-        return $response;
-        //return response()->json(['success' => TRUE,'role'=>$response], 200);
-    }
-}

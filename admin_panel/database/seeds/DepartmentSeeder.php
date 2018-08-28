@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-use Modules\Notice\Models\NoticeModel as Notice;
+use Modules\Department\Models\DepartmentModel as model;
 
-class NoticeSeeder extends Seeder
+class DepartmentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class NoticeSeeder extends Seeder
      */
     public function run()
     {
-        factory(Notice::class,10)->create();
+        factory(model::class,10)->create();
     }
 }

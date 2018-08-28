@@ -2,16 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: deepita
- * Date: 5/24/18
- * Time: 12:43 PM
+ * Date: 6/23/18
+ * Time: 5:22 PM
  */
+
 namespace Modules\Department\Models;
 use Illuminate\Database\Eloquent\Model;
-
 class DepartmentModel extends Model
 {
     protected $table='department';
     protected $fillable = [
-          'department','designation','created_at'
+        'designation','department','created_at'
+    ];
+
+    /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'updated_at'
     ];
 }

@@ -2,29 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11074d00-e602-4a2c-befd-c825ea58b1e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resources/assets/backjs/department/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Department/Controllers/ExpenseController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Department/Models/ExpenseModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/DepartmentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DepartmentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DepartmentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DepartmentSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Department/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Department/Views/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Department/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Department/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Expense/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Expense/Views/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Notice/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Notice/Views/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modals/expense/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/expense/modals/_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modals/expense/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/expense/modals/_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/assets/backjs/department/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/assets/backjs/department/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Channels/SlackWebhookChannel.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Channels/SlackWebhookChannel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Rules/DatabaseRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Rules/DatabaseRule.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,48 +99,59 @@
     <session id="-827736218">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="60" />
-          <entry key="js" value="254" />
-          <entry key="php" value="2719" />
+          <entry key="cell" value="4" />
+          <entry key="dummy" value="90" />
+          <entry key="js" value="3254" />
+          <entry key="php" value="3367" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="779" />
-          <entry key="JavaScript" value="254" />
-          <entry key="PHP" value="1940" />
-          <entry key="PLAIN_TEXT" value="62" />
+          <entry key="Blade" value="1022" />
+          <entry key="JavaScript" value="3254" />
+          <entry key="PHP" value="2345" />
+          <entry key="PLAIN_TEXT" value="92" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="admin_access" value="2" />
-          <entry key="admin_department" value="1" />
+          <entry key="admin_department" value="18" />
           <entry key="admin_expense" value="6" />
           <entry key="admin_industries" value="1" />
           <entry key="admin_interests" value="1" />
           <entry key="admin_notice" value="2" />
-          <entry key="js" value="10" />
-          <entry key="php" value="153" />
+          <entry key="js" value="13" />
+          <entry key="php" value="185" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="34" />
-          <entry key="Database Element" value="13" />
-          <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="119" />
+          <entry key="Blade" value="37" />
+          <entry key="Database Element" value="30" />
+          <entry key="JavaScript" value="13" />
+          <entry key="PHP" value="148" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -153,70 +170,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-              <folding>
-                <element signature="e#129#160#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="102" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
-              <folding>
-                <element signature="e#130#162#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/modals/expense/modals/_edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="74" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/modals/expense/modals/_add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Notice/Views/list.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -224,11 +181,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-525">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="2025">
+              <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/resources/assets/backjs/department/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="228" column="20" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/factories/DepartmentFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <element signature="e#134#174#0#PHP" expanded="true" />
+                <element signature="e#89#118#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#7#45#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -238,6 +252,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>purchase</find>
+      <find>foreach</find>
+      <find>e_desig</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,10 +268,8 @@
         <option value="$PROJECT_DIR$/modules/Expense/Models/DataModel/Education.php" />
         <option value="$PROJECT_DIR$/modules/Auth/Views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Domain/Repo/ExpenseRepo.php" />
-        <option value="$PROJECT_DIR$/modules/Expense/routes.php" />
         <option value="$PROJECT_DIR$/modules/Expense/Models/ExpenseModel.php" />
         <option value="$PROJECT_DIR$/app/Domain/RepoImpl/EducationRepoImpl.php" />
-        <option value="$PROJECT_DIR$/public/resources/assets/backjs/expense/list.js" />
         <option value="$PROJECT_DIR$/resources/views/template/_mainSideNavbar.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_27_043020_create_notice_table.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
@@ -263,34 +277,40 @@
         <option value="$PROJECT_DIR$/modules/Notice/routes.php" />
         <option value="$PROJECT_DIR$/database/seeds/MenuSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/ModulesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ExpenseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/ExpenseFactory.php" />
-        <option value="$PROJECT_DIR$/app/Domain/RepoImpl/ExpenseRepoImpl.php" />
         <option value="$PROJECT_DIR$/app/Domain/Repo/NoticeRepo.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/modules/Notice/Models/NoticeModel.php" />
         <option value="$PROJECT_DIR$/database/seeds/NoticeSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/template/_head.blade.php" />
         <option value="$PROJECT_DIR$/database/factories/NoticeFactory.php" />
         <option value="$PROJECT_DIR$/app/Domain/RepoImpl/NoticeRepoImpl.php" />
         <option value="$PROJECT_DIR$/public/resources/assets/backjs/notice/list.js" />
-        <option value="$PROJECT_DIR$/modules/Department/routes.php" />
-        <option value="$PROJECT_DIR$/modules/Department/Views/list.blade.php" />
         <option value="$PROJECT_DIR$/modules/Department/Models/Department.php" />
         <option value="$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php" />
-        <option value="$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php" />
-        <option value="$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php" />
-        <option value="$PROJECT_DIR$/public/resources/assets/backjs/department/list.js" />
         <option value="$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php" />
         <option value="$PROJECT_DIR$/modules/Notice/Views/list.blade.php" />
         <option value="$PROJECT_DIR$/modules/Expense/Views/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/modals/expense/modals/_edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/modals/expense/modals/_add.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php" />
         <option value="$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php" />
         <option value="$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DepartmentSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/modules/Expense/routes.php" />
+        <option value="$PROJECT_DIR$/modules/Department/routes.php" />
+        <option value="$PROJECT_DIR$/modules/Department/Views/list.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php" />
+        <option value="$PROJECT_DIR$/app/Domain/RepoImpl/ExpenseRepoImpl.php" />
+        <option value="$PROJECT_DIR$/database/factories/ExpenseFactory.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ExpenseSeeder.php" />
+        <option value="$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php" />
+        <option value="$PROJECT_DIR$/database/factories/DepartmentFactory.php" />
+        <option value="$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php" />
+        <option value="$PROJECT_DIR$/public/resources/assets/backjs/expense/list.js" />
+        <option value="$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php" />
+        <option value="$PROJECT_DIR$/public/resources/assets/backjs/department/list.js" />
       </list>
     </option>
   </component>
@@ -405,9 +425,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="710" />
+    <option name="x" value="731" />
     <option name="y" value="-4" />
-    <option name="width" value="656" />
+    <option name="width" value="633" />
     <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -416,6 +436,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -451,7 +472,57 @@
             <path>
               <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
@@ -465,6 +536,13 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="Expense" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Expense" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
@@ -535,7 +613,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="backjs" type="462c0819:PsiDirectoryNode" />
-              <item name="notice" type="462c0819:PsiDirectoryNode" />
+              <item name="expense" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
@@ -553,6 +631,23 @@
               <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin_panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin_panel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
               <item name="modals" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -593,14 +688,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../office/netexpro/circleliner-admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../office/netexpro/mallbackoffice" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -608,8 +702,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/modals" />
-      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/public/resources/assets/backjs" />
+      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/database/factories" />
     </key>
@@ -638,17 +732,52 @@
       <updated>1535299060580</updated>
       <workItem from="1535299061813" duration="11488000" />
       <workItem from="1535342778331" duration="7880000" />
-      <workItem from="1535351084006" duration="8531000" />
+      <workItem from="1535351084006" duration="8662000" />
+      <workItem from="1535375991105" duration="12406000" />
+      <workItem from="1535391283314" duration="2032000" />
+      <workItem from="1535393851936" duration="614000" />
+      <workItem from="1535431451765" duration="1707000" />
+      <workItem from="1535433216220" duration="1790000" />
+      <workItem from="1535435038052" duration="1791000" />
+      <workItem from="1535436901722" duration="1787000" />
+      <workItem from="1535438712330" duration="1788000" />
+      <workItem from="1535440526035" duration="1786000" />
+      <workItem from="1535442340240" duration="1786000" />
+      <workItem from="1535444152319" duration="1793000" />
+      <workItem from="1535445969186" duration="1157000" />
+      <workItem from="1535461340917" duration="1616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27899000" />
+    <option name="totallyTimeSpent" value="60083000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.2689394" />
+      <window_info id="Structure" order="1" sideWeight="0.5015528" side_tool="true" weight="0.37348485" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32919255" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32298136" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.37954545" />
       <window_info id="Structure" order="1" sideWeight="0.5015528" side_tool="true" weight="0.37348485" />
       <window_info id="npm" order="2" side_tool="true" />
@@ -670,7 +799,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -679,12 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/template/_controlSidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template/_errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_043020_create_notice_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -719,12 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/DepartmentFactory.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DepartmentSeeder.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/ModulesSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -732,31 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ExpenseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ExpenseFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Domain/Repo/ExpenseRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -805,13 +901,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2f3147e5-6b07-47c1-a797-8b3c0db4ea64/database/hr/schema/public/table/admin_notice">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2f3147e5-6b07-47c1-a797-8b3c0db4ea64/database/hr/schema/public/table/admin_notice" />
     <entry file="file://$PROJECT_DIR$/database/factories/NoticeFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -823,26 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding>
-            <element signature="e#123#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -853,24 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Department/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Expense/Models/ExpenseModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Expense/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -891,64 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2f3147e5-6b07-47c1-a797-8b3c0db4ea64/database/hr/schema/public/table/admin_department">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Domain/RepoImpl/ExpenseRepoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#123#155#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <element signature="e#123#158#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/assets/backjs/department/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Department/Views/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#134#174#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2f3147e5-6b07-47c1-a797-8b3c0db4ea64/database/hr/schema/public/table/admin_expense">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -956,17 +954,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Notice/Views/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Expense/Views/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="102" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -984,37 +996,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Notice/Views/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Expense/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Expense/Controllers/ExpenseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
-          <folding>
-            <element signature="e#130#162#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1800">
+          <caret line="125" column="24" lean-forward="true" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Notice/Controllers/NoticeController.php">
+    <entry file="file://$PROJECT_DIR$/app/Domain/RepoImpl/ExpenseRepoImpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-          <folding>
-            <element signature="e#129#160#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/factories/ExpenseFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="45">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/modals/notice/modals/_add.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/ExpenseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Department/Views/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Department/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DepartmentSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Department/Models/DepartmentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f3147e5-6b07-47c1-a797-8b3c0db4ea64/database/hr/schema/public/table/admin_department">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="designation" languageId="JSON" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/assets/backjs/expense/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="147" column="53" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Domain/RepoImpl/DepartmentRepoImpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="102" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Department/Controllers/DepartmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="149" column="47" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/modals/department/modals/_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/modals/department/modals/_add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/DepartmentFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#89#118#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_department_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Domain/Repo/DepartmentRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/assets/backjs/department/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="228" column="20" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
         </state>
       </provider>
     </entry>
