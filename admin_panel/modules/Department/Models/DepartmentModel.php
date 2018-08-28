@@ -10,7 +10,9 @@ namespace Modules\Department\Models;
 use Illuminate\Database\Eloquent\Model;
 class DepartmentModel extends Model
 {
-    protected $table='department';
+
+    protected $connection = 'pgsql_user';
+    protected $table='departments';
     protected $fillable = [
         'designation','department','created_at'
     ];

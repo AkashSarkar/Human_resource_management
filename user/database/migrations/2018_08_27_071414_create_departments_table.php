@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModulesTable extends Migration
+class CreateDepartmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +13,10 @@ class CreateModulesTable extends Migration
      */
     public function up()
     {
-
-        Schema::create('modules', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 50);
-            $table->string('tag', 50)->unique();
-            $table->tinyInteger('perm')->default(0);
-            $table->integer('_perm_sort')->default(0);
-            $table->softDeletes();
+            $table->string('department');
+            $table->jsonb('designation');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateModulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modules');
+        Schema::dropIfExists('department');
     }
 }

@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/user/modules" isTestSource="false" packagePrefix="Modules\" />
       <sourceFolder url="file://$MODULE_DIR$/user/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/user/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/admin_panel/modules" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/user/vendor/barryvdh/laravel-ide-helper" />
       <excludeFolder url="file://$MODULE_DIR$/user/vendor/barryvdh/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/user/vendor/composer" />
