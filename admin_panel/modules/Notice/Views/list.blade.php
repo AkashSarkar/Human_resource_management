@@ -18,15 +18,16 @@
 @endsection
 @section('data-list')
     <?php
-    $module_name = "Notice";
+    $module_name = "New Notice";
     $module_dash = str_replace(" ", "-", strtolower($module_name));
     $module_udash = str_replace(" ", "_", strtolower($module_name));
+    $module="Notice";
     ?>
     <!-- Button to Open the Add User Modal -->
     <?php $mid = 'addNotice'; $mtitle = 'Add New Notice'?>
     <button type="button" class="btn btn-primary" style=" border: 6px solid #fff;"
             data-toggle="modal" data-target="#modal_add_{{$module_udash}}">
-        Add New {{$module_name}}
+        Add {{$module_name}}
     </button>
     <!-- Button to Open the Modal -->
     <!-- /.box-header -->

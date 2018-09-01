@@ -115,7 +115,7 @@ class ExpenseController extends BaseController
 
             $rules = array(
                 'item' => "required|max:128",
-                'from' => "required",
+                'purchase' => "required",
                 'date' => "required",
                 'price' => "required",
 

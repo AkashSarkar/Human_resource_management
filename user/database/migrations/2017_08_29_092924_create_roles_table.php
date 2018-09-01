@@ -13,7 +13,7 @@ class CreateRolesTable extends Migration
     public function up()
     {
 
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::connection('pgsql_front')->create('user_roles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('role_name', 50);
             $table->text('description');

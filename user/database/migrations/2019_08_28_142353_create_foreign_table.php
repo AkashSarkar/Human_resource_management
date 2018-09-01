@@ -15,7 +15,7 @@ class CreateForeignTable extends Migration
     {
         Schema::table('companies', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('id')->on('employees');
+                ->references('id')->on('users');
             $table->foreign('department_id')
                 ->references('id')->on('departments');
 
@@ -23,21 +23,21 @@ class CreateForeignTable extends Migration
 
         Schema::table('bank_acs', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('id')->on('employees');
+                ->references('id')->on('users');
         });
 
         Schema::table('awards', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('id')->on('employees');
+                ->references('id')->on('users');
         });
 
         Schema::table('attendances', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('id')->on('employees');
+                ->references('id')->on('users');
         });
         Schema::table('leaves', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('id')->on('employees');
+                ->references('id')->on('users');
             $table->foreign('l_type_id')
                 ->references('id')->on('leave_types');
             $table->foreign('a_id')

@@ -162,22 +162,22 @@ $(function () {
         var oTable = $('#listDataTable').dataTable();
         $('#listDataTable').on('click', 'tr', function () {
             var oData = oTable.fnGetData(this);
-            id = oData.id;
-            $("#e_department").val(oData.department);
-            var designation=[];
-            designation=JSON.parse(oData.designation);
-            des_len=designation.length;
-            for(var i=0;i<designation.length;i++)
-            {
-                html='<div><input type="text" class="form-control" id="e_designation'+i+'" name="e_designation" value="'+designation[i]+'" placeholder="Designation" autocomplete="off" required="required">\n'
-                  if(i>0)
-                   html+= '                    <a href="#" class="text-bold btn-sm btn-danger" id="r_e_des" > - Remove designation </a></div>';
-                $("#n_e_des").append("<p>"+html+"</p>");
+            if(oData){
+                id = oData.id;
+                $("#e_department").val(oData.department);
+                var designation=[];
+                designation=JSON.parse(oData.designation);
+                des_len=designation.length;
+                for(var i=0;i<designation.length;i++)
+                {
+                    html='<div><input type="text" class="form-control" id="e_designation'+i+'" name="e_designation" value="'+designation[i]+'" placeholder="Designation" autocomplete="off" required="required">\n'
+                    if(i>0)
+                        html+= '                    <a href="#" class="text-bold btn-sm btn-danger" id="r_e_des" > - Remove designation </a></div>';
+                    $("#n_e_des").append("<p>"+html+"</p>");
+
+                }
 
             }
-
-
-
         });
 
         //update

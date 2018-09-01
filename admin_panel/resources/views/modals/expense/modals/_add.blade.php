@@ -26,7 +26,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" class="form-control" id="price" name="price" placeholder="Price"
+                    <input type="number" class="form-control" id="price" name="price" placeholder="Price"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_price"></span>
                 </div>
@@ -38,6 +38,7 @@
         var module_udash = "{{$module_udash}}"
         var module_dash = "{{$module_dash}}";
         var add_form_id = "{{$form_id}}";
+        var module_prefix="{{$module_prefix}}";
     </script>
 @overwrite
 @section('modal-footer-action')

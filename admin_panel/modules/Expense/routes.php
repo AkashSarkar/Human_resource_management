@@ -8,14 +8,16 @@
 Route::group(['Module' => 'Expense', 'namespace' => 'Modules\Expense\Controllers', 'middleware' => 'web'], function () {
 
 
-    Route::get('expense', 'ExpenseController@index')->name('expense');
-    Route::post('expense', 'ExpenseController@store')->name('expense');
-    Route::get('expense/{id}', 'ExpenseController@show');
-    Route::patch('expense/{id}', 'ExpenseController@update');
-    Route::delete('expense/{id}', 'ExpenseController@destroy');
+    $module='Expense';
+    $module_prefix=strtolower($module);
+    Route::get($module_prefix, $module.'Controller@index')->name($module_prefix);
+    Route::post($module_prefix, $module.'Controller@store')->name($module_prefix);
+    Route::get($module_prefix.'/{id}', $module.'Controller@show');
+    Route::patch($module_prefix.'/{id}', $module.'Controller@update');
+    Route::delete($module_prefix.'/{id}', $module.'Controller@destroy');
 
 
-    Route::post('list-expense-datatable', 'ExpenseController@jsonDataTable')->name('list-expense-datatable');
+    Route::post('list-'.$module_prefix.'-datatable', $module.'Controller@jsonDataTable')->name('list-'.$module_prefix.'-datatable');
 
 
 });

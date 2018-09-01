@@ -1,6 +1,6 @@
 @extends("layouts.module._master_modal")
 @section('modal-id'){{"modal_edit_".$module_udash}}@overwrite
-@section('modal-title'){{"Edit ".$module_name}}@overwrite
+@section('modal-title'){{"Edit ".$module}}@overwrite
 <?php $form_id = "edit-" . $module_dash . "-form"; ?>
 @section('modal-form')
     <div class="box-content">

@@ -16,10 +16,10 @@ class CreateAdminUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('password');
             $table->unsignedInteger('role_id')->nullable();
-            $table->index('role_id');
+//            $table->index('role_id');
             $table->foreign('role_id')->references('id')->on('roles');
             $table->rememberToken();
             $table->timestamps();

@@ -2,8 +2,9 @@ $(function () {
     'use strict'
     $(document).ready(function () {
 
-        console.log(module_dash);
-        console.log(add_form_id);
+        // console.log(module_dash);
+        // console.log(add_form_id);
+        // console.log(module_prefix);
         var dataTable;
         var data = {
             _token: $('meta[name="csrf-token"]').attr('content')
@@ -27,7 +28,7 @@ $(function () {
             // "drawCallback": customInitCompelete,
             "ajax": {
                 'type': 'POST',
-                'url': $("#expense_datatable").val(),
+                'url': $("#" + module_prefix + "_datatable").val(),
                 'data': data,
             },
             "columns": [
@@ -99,7 +100,7 @@ $(function () {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 type: 'POST',
-                url: $('#expense_create').val(),
+                url: $('#' + module_prefix + '_create').val(),
                 data: obj,
                 statusCode: customStatusCodeRes,
                 success: function (data) {
@@ -115,30 +116,32 @@ $(function () {
             });
         });
         //assign in edit from
-        let id='';
+        let id = '';
         /*get value from datatable*/
-        var oTable =  $('#listDataTable').dataTable();
-        $('#listDataTable').on('click', 'tr', function(){
+        var oTable = $('#listDataTable').dataTable();
+        $('#listDataTable').on('click', 'tr', function () {
             var oData = oTable.fnGetData(this);
-            id=oData.id;
-            $("#e_item").val(oData.item);
-            $("#e_purchase").val(oData.purchase_from);
-            $("#e_date").val(oData.purchase_date);
-            $("#e_price").val(oData.price);
+            if (oData) {
+                id = oData.id;
+                $("#e_item").val(oData.item);
+                $("#e_purchase").val(oData.purchase_from);
+                $("#e_date").val(oData.purchase_date);
+                $("#e_price").val(oData.price);
+            }
         });
         //delete
-        $("#listDataTable tbody").on("click","button.del",function () {
-            var b=$(this);
-            let id =$(this).val();
-            if(confirm("Are you want to delete this data?")){
+        $("#listDataTable tbody").on("click", "button.del", function () {
+            var b = $(this);
+            let id = $(this).val();
+            if (confirm("Are you want to delete this data?")) {
                 $.ajax({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                     type: 'DELETE',
-                    url: $('#expense_delete').val()+'/'+id,
-                    data:{
-                        id:id
+                    url: $('#' + module_prefix + '_delete').val() + '/' + id,
+                    data: {
+                        id: id
                     },
                     statusCode: customStatusCodeRes,
                     success: function (data) {
@@ -162,7 +165,7 @@ $(function () {
             var custom_formData = new FormData();
             var elements = document.getElementById(edit_form_id).elements;
             var obj = {};
-            obj['id']=id;
+            obj['id'] = id;
             for (var i = 0; i < elements.length; i++) {
                 var item = elements.item(i);
                 obj[item.id] = item.value;
@@ -173,7 +176,7 @@ $(function () {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 type: 'PATCH',
-                url: $('#expense_edit').val()+'/'+id,
+                url: $('#expense_edit').val() + '/' + id,
                 data: obj,
                 statusCode: customStatusCodeRes,
                 success: function (data) {
@@ -188,7 +191,6 @@ $(function () {
                 }
             });
         });
-
 
 
     });

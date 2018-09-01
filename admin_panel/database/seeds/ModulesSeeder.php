@@ -36,6 +36,18 @@ class ModulesSeeder extends Seeder
             'name' => 'Department',
             'tag' => 'department'
         ]);
+        DB::table('modules')->insert([
+            'name' => 'Employee',
+            'tag' => 'employee'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Position',
+            'tag' => 'position'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Account',
+            'tag' => 'account'
+        ]);
 
     }
 }

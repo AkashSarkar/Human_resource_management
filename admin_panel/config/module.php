@@ -7,5 +7,7 @@ return [
         "Expense",
         "Department",
         "Notice",
+        "User",
+        "Employee"
     )
 ];

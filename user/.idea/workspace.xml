@@ -2,59 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd4aeba9-fd39-41ce-ac32-b6f9fad8b853" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Human_Resource.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Human_Resource.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/Repo/EmployeeRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/EmployeeRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/database/factories/EmployeeFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/EmployeeSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/User/Controllers/EmployeeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/User/Models/EmployeeModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/User/Views/employee.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/User/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/User/employee/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/User/employee/modals/_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/User/employee/modals/_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2017_06_15_050701_create_menus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/admin_panel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/admin_panel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/database/migrations/2018_08_27_071414_create_department_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_departments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Department/Models/DepartmentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Department/Models/DepartmentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/config/module.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/config/module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/database/migrations/2017_09_07_072826_create_access_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/database/migrations/2018_05_16_112104_create_admin_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/migrations/2018_05_16_112104_create_admin_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/database/seeds/MenuSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/MenuSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/database/seeds/ModulesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/ModulesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Auth/Views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Auth/Views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Department/Controllers/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Department/Controllers/DepartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Department/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Department/Views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Expense/Controllers/ExpenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Expense/Controllers/ExpenseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Expense/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Expense/Views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Expense/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Expense/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Notice/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Notice/Views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/department/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/department/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/expense/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/expense/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/notice/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/notice/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/department/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/department/modals/_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/expense/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/expense/modals/_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/expense/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/expense/modals/_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/notice/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/notice/modals/_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/notice/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/notice/modals/_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/BinaryFileResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/BinaryFileResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Response.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/ResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/process/Tests/ProcessTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/process/Tests/ProcessTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/translation/Command/XliffLintCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/translation/Command/XliffLintCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2017_06_15_050701_create_menus_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2017_08_28_092925_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2017_09_07_072826_create_access_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Command/XliffLintCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Command/XliffLintCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,43 +152,53 @@
     <session id="-1539997968">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.125" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="admin_menus" value="1" />
-          <entry key="admin_users" value="1" />
+          <entry key="admin_users" value="2" />
           <entry key="env" value="1" />
-          <entry key="php" value="56" />
+          <entry key="php" value="79" />
           <entry key="user_bank_ac" value="1" />
+          <entry key="user_employees" value="1" />
           <entry key="user_migrations" value="1" />
+          <entry key="user_users" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="Blade" value="1" />
-          <entry key="Database Element" value="4" />
-          <entry key="PHP" value="55" />
+          <entry key="Blade" value="3" />
+          <entry key="Database Element" value="7" />
+          <entry key="PHP" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="30" />
-          <entry key="php" value="797" />
+          <entry key="php" value="901" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="797" />
+          <entry key="PHP" value="901" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -176,85 +215,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/seeds/AccessSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="210">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_departments_table.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_15_050701_create_menus_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/template/_mainSideNavbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Helpers/helpers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="80" column="16" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendances_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_160537_create_leave_types_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_160600_create_actions_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_28_160040_create_leaves_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="495">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -280,7 +314,6 @@
         <option value="$PROJECT_DIR$/database/seeds/AccessSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_08_28_150823_create_user_module_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/ModulesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_153848_create_menus_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_153917_create_modules_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_154126_create_roles_table.php" />
@@ -289,8 +322,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_160040_create_leave_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_160537_create_leave_types_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_160600_create_actions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_09_07_072826_create_access_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_142245_create_companies_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_departments_table.php" />
@@ -299,7 +330,14 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendance_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_09_28_160040_create_leave_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_09_28_160040_create_leaves_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/template/_mainSideNavbar.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_06_15_050701_create_menus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_09_07_072826_create_access_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       </list>
     </option>
   </component>
@@ -436,6 +474,11 @@
             <path>
               <item name="user" type="b2602c69:ProjectViewProjectNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,13 +509,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="user" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -483,7 +519,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin_panel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -523,16 +559,31 @@
       <workItem from="1535473663253" duration="1681000" />
       <workItem from="1535476132115" duration="1782000" />
       <workItem from="1535477947691" duration="237000" />
+      <workItem from="1535522939416" duration="919000" />
+      <workItem from="1535527634492" duration="697000" />
+      <workItem from="1535528357184" duration="1139000" />
+      <workItem from="1535530173533" duration="599000" />
+      <workItem from="1535686192568" duration="822000" />
+      <workItem from="1535690665685" duration="537000" />
+      <workItem from="1535695015946" duration="599000" />
+      <workItem from="1535733982180" duration="1042000" />
+      <workItem from="1535735051977" duration="610000" />
+      <workItem from="1535776746142" duration="1260000" />
+      <workItem from="1535778478583" duration="659000" />
+      <workItem from="1535780294178" duration="1693000" />
+      <workItem from="1535782195750" duration="1780000" />
+      <workItem from="1535785480659" duration="1715000" />
+      <workItem from="1535787633359" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12136000" />
+    <option name="totallyTimeSpent" value="26806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1719697" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3280303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -547,13 +598,36 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2872671" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26708075" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.2931818" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17424242" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32919255" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2863777" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.2931818" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -568,115 +642,21 @@
     <entry file="file://$PROJECT_DIR$/config/module.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/admin_users" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_05_16_112104_create_admin_users_table.php" />
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/admin_menus" />
     <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/user_bank_ac" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_28_150823_create_user_module_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/AccessSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/user_migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/user_migrations" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_154126_create_roles_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_153848_create_menus_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_153917_create_modules_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_154145_create_access_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/ModulesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_20_050702_create_menus_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_21_110110_create_modules_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_09_08_072826_create_access_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_142245_create_companies_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_142313_create_bank_acs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_departments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Helpers/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
@@ -712,10 +692,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/user_employees" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_142245_create_companies_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_142313_create_bank_acs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/admin_users" />
+    <entry file="das://6ae744a4-950f-4e41-bbb7-24de4600fddd/database/hr/schema/public/table/user_users" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_27_071414_create_departments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/_controlSidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/template/_mainSideNavbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ModulesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_09_07_072826_create_access_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_140934_create_employees_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_142353_create_foreign_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_31_110119_create_modules_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_29_092924_create_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_15_050701_create_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/AccessSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 @extends("layouts.module._master_modal")
 @section('modal-id'){{"modal_edit_".$module_udash}}@overwrite
-@section('modal-title'){{"Edit ".$module_name}}@overwrite
+@section('modal-title'){{"Edit ".$module}}@overwrite
 <?php $form_id = "edit-" . $module_dash . "-form"; ?>
 @section('modal-form')
     <div class="box-content">
@@ -32,8 +32,8 @@
                 </div>
                 <div class="form-group">
                     <label for="e_price">Price</label>
-                    <input type="text" class="form-control" id="e_price" name="e_price"
-                           placeholder="Item Name"
+                    <input type="number" class="form-control" id="e_price" name="e_price"
+                           placeholder="Price"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_e_price"></span>
 
@@ -46,6 +46,7 @@
         var module_udash = "{{$module_udash}}"
         var module_dash = "{{$module_dash}}";
         var edit_form_id = "{{$form_id}}";
+        var module_prefix="{{$module_prefix}}";
     </script>
 @overwrite
 @section('modal-footer-action')

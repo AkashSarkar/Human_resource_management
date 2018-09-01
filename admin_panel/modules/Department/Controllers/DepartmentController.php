@@ -63,13 +63,13 @@ class DepartmentController extends BaseController
             ];
 
             $glob_searchable_col = [
-                "department" => [
+                "departments" => [
                     0 => 'department',
                 ]
 
             ];
 
-            $glob_main_table = "department";
+            $glob_main_table = "departments";
             $totalData = $this->departmentRepo->totalCountDT();
             $totalFilteredSync = false;
             $totalFiltered = $totalData;

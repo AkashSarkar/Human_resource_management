@@ -115,9 +115,11 @@ $(function () {
         var oTable =  $('#listDataTable').dataTable();
         $('#listDataTable').on('click', 'tr', function(){
             var oData = oTable.fnGetData(this);
-            id=oData.id;
-            $("#e_title").val(oData.title);
-            $("#e_description").val(oData.description);
+            if(oData){
+                id=oData.id;
+                $("#e_title").val(oData.title);
+                $("#e_description").val(oData.description);
+            }
         });
         //delete
         $("#listDataTable tbody").on("click","button.del",function () {

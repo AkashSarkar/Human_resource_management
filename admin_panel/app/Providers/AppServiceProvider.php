@@ -48,5 +48,7 @@ class AppServiceProvider extends ServiceProvider
             'App\Domain\RepoImpl\NoticeRepoImpl');
         $this->app->bind('App\Domain\Repo\DepartmentRepo',
             'App\Domain\RepoImpl\DepartmentRepoImpl');
+        $this->app->bind('App\Domain\Repo\EmployeeRepo',
+            'App\Domain\RepoImpl\EmployeeRepoImpl');
     }
 }

@@ -19,15 +19,17 @@
 @endsection
 @section('data-list')
     <?php
-    $module_name = $module;
+    $module_name = 'New '.$module;
     $module_dash = str_replace(" ", "-", strtolower($module_name));
     $module_udash = str_replace(" ", "_", strtolower($module_name));
+    $module=$module;
+    $module_prefix=strtolower($module);
     ?>
     <!-- Button to Open the Add User Modal -->
     <?php $mid = 'addEducation'; $mtitle = 'Add New Expense Item'?>
     <button type="button" class="btn btn-primary" style=" border: 6px solid #fff;"
             data-toggle="modal" data-target="#modal_add_{{$module_udash}}">
-        Add New {{$module_name}}
+        Add {{$module_name}}
     </button>
     <!-- Button to Open the Modal -->
     <!-- /.box-header -->
@@ -51,13 +53,13 @@
         </table>
     </div>
     <!--script calling from list.js-->
-    <input type="hidden" id="expense_datatable" value="{{route('list-expense-datatable')}}">
-    <input type="hidden" id="expense_create" value="{{route('expense')}}">
-    <input type="hidden" id="expense_edit" value="{{route('expense')}}">
-    <input type="hidden" id="expense_delete" value="{{route('expense')}}">
+    <input type="hidden" id="{{$module_prefix}}_datatable" value="{{route('list-'.$module_prefix.'-datatable')}}">
+    <input type="hidden" id="{{$module_prefix}}_create" value="{{route($module_prefix)}}">
+    <input type="hidden" id="{{$module_prefix}}_edit" value="{{route($module_prefix)}}">
+    <input type="hidden" id="{{$module_prefix}}_delete" value="{{route($module_prefix)}}">
     @push('modals')
-        @include('modals.expense.modals._add')
-        @include('modals.expense.modals._edit')
+        @include('modals.'.$module_prefix.'.modals._add')
+        @include('modals.'.$module_prefix.'.modals._edit')
     @endpush
 
 @endsection
@@ -69,5 +71,5 @@
     <!-- DataTables -->
     {{ap_datatable("js")}}
     {{--ajax script--}}
-    <script src="{{asset("resources/assets/backjs/expense/list.js")}}"></script>
+    <script src="{{asset("resources/assets/backjs/".$module_prefix."/list.js")}}"></script>
 @endpush
