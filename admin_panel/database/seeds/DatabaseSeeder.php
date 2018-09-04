@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             NoticeSeeder::class,
             DepartmentSeeder::class,
             EmployeeSeeder::class,
+            AccountSeeder::Class,
         ]);
 
     }

@@ -8,7 +8,7 @@
 
 namespace Modules\User\Controllers;
 
-use App\Domain\Repo\EmployeeRepo;
+use App\Domain\Repo\AccountRepo;
 use App\Http\Controllers\BaseController;
 use App\Models\Performance;
 use Illuminate\Http\Request;
@@ -21,17 +21,16 @@ use App\Models\ErrorR;
 use Illuminate\Support\Facades\Validator;
 use Modules\User\Models\EmployeeModel;
 
-class EmployeeController extends BaseController
+class AccountController extends BaseController
 {
-    private $employeeRepo;
-    protected $connection;
+    private $accountRepo;
 
-    public function __construct(EmployeeRepo $employeeRepo)
+    public function __construct(AccountRepo $accountRepo)
     {
 
         $this->middleware('auth');
         parent::__construct();
-        $this->employeeRepo = $employeeRepo;
+        $this->accountRepo = $accountRepo;
 
     }
 
@@ -41,30 +40,30 @@ class EmployeeController extends BaseController
 
 //        $model = $this->employeeRepo->filterDT();
 //        dd($model);
-        return view('User::employee');
+        return view('User::account');
     }
 
     public function jsonDataTable(Request $request)
     {
         $responseData = [];
-        $responseData['title'] = 'Employee';
+        $responseData['title'] = 'Account';
         $responseData['status_code'] = 200;
 
         try {
 
             $columns = array(
-                0 => 'id',
-                1 => 'name',
-                2 => 'f_name',
-                3 => 'email',
-                4 => 'phone',
-                5 => 'dob',
-                6 => 'p_address',
-                7 => 'l_address',
+                0 => 'user_id',
+                1 => 'ac_name',
+                2 => 'ac_number',
+                3 => 'bank',
+                4 => 'ifsc',
+                5 => 'pan',
+                6 => 'branch',
+
             );
             $columns_condition = array(
-                'name' => "like",
-                'email' => "like",
+                'ac_name' => "like",
+                'ac_number' => "like",
             );
             $foreign_col = [
 
@@ -75,21 +74,21 @@ class EmployeeController extends BaseController
             ];
 
             $glob_searchable_col = [
-                "users" => [
-                    0 => 'name',
-                    1 => 'email'
+                "bank_acs" => [
+                    0 => 'ac_name',
+                    1 => 'ac_number',
                 ]
 
             ];
 
-            $glob_main_table = "users";
-            $totalData = $this->employeeRepo->totalCountDT();
+            $glob_main_table = "bank_acs";
+            $totalData = $this->accountRepo->totalCountDT();
             $totalFilteredSync = false;
             $totalFiltered = $totalData;
 
 
-            $model = $this->employeeRepo->filterDT();
-            $model_count = $this->employeeRepo->filterSingleDT();
+            $model = $this->accountRepo->filterDT();
+            $model_count = $this->accountRepo->filterSingleDT();
 
             $get_datatable_data = get_datatable_data($request, $model, $columns, $foreign_col, $foreign_table, $glob_searchable_col, $columns_condition, $glob_main_table, $model_count, $totalFilteredSync, $totalFiltered);
 
@@ -121,25 +120,24 @@ class EmployeeController extends BaseController
         try{
             $inputs = array(
 
-                'name'=>$request['name'],
-                'email'=>$request['email'],
-                'password'=>$request['password'],
-                'f_name'=>$request['f_name'],
-                'phone'=>$request['phone'],
-                'dob'=>$request['dob'],
-                'p_address'=>$request['p_address'],
-                'l_address'=>$request['l_address'],
+                'employee_id'=>$request['employee_id'],
+                'account_name'=>$request['account_name'],
+                'account_number'=>$request['account_number'],
+                'bank_name'=>$request['bank_name'],
+                'ifsc'=>$request['ifsc'],
+                'pan_number'=>$request['pan_number'],
+                'branch'=>$request['branch'],
             );
             $connection = 'pgsql_user';
             $rules = array(
 
-                'name'=>"required|min:4|max:30",
-                'email'=>"required|string|email|max:255|unique:$connection.users,email",
-                'password'=>"required|min:6|max:20",
-                'f_name'=>"required|min:4|max:30",
-                'phone'=>"required|max:11",
-                'p_address'=>"required|min:12|max:200",
-                'l_address'=>"required|min:6|max:200",
+                'employee_id'=>"required|unique:$connection.bank_acs,user_id",
+                'account_name'=>"required",
+                'account_number'=>"required|min:10|max:20|unique:$connection.bank_acs,ac_number",
+                'bank_name'=>"required|min:4|max:50",
+                'ifsc'=>"required|max:20",
+                'pan_number'=>"required|min:10|max:20",
+                'branch'=>"required|min:6|max:200",
 
 
             );
@@ -153,7 +151,7 @@ class EmployeeController extends BaseController
                 $status=422;
 //            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
             } else {
-                $interest = $this->employeeRepo->create($request);
+                $interest = $this->accountRepo->create($request);
                 $s=TRUE;
                 $m='Successful';
                 $status=200;
@@ -175,26 +173,26 @@ class EmployeeController extends BaseController
     {
         try{
             $inputs = array(
-                'e_name'=>$request['e_name'],
-                'e_email'=>$request['e_email'],
-                'e_password'=>$request['e_password'],
-                'e_f_name'=>$request['e_f_name'],
-                'e_phone'=>$request['e_phone'],
-                'e_dob'=>$request['e_dob'],
-                'e_p_address'=>$request['e_p_address'],
-                'e_l_address'=>$request['e_l_address'],
 
+                'e_employee_id'=>$request['e_employee_id'],
+                'e_account_name'=>$request['e_account_name'],
+                'e_account_number'=>$request['e_account_number'],
+                'e_bank_name'=>$request['e_bank_name'],
+                'e_ifsc'=>$request['e_ifsc'],
+                'e_pan_number'=>$request['e_pan_number'],
+                'e_branch'=>$request['e_branch'],
             );
             $connection = 'pgsql_user';
             $id=$request->id;
             $rules = array(
 
-                'e_name'=>"required|min:4|max:30",
-                'e_email'=>"required|string|email|max:255unique:$connection.users,email,$id",
-                'e_f_name'=>"required|min:4|max:30",
-                'e_phone'=>"required|max:11",
-                'e_p_address'=>"required|min:12|max:200",
-                'e_l_address'=>"required|min:6|max:200",
+                'e_employee_id'=>"required|unique:$connection.bank_acs,user_id,$id",
+                'e_account_name'=>"required",
+                'e_account_number'=>"required|min:10|max:20|unique:$connection.bank_acs,ac_number,$id",
+                'e_bank_name'=>"required|min:4|max:50",
+                'e_ifsc'=>"required|max:20",
+                'e_pan_number'=>"required|min:10|max:20",
+                'e_branch'=>"required|min:6|max:200",
 
 
             );
@@ -207,7 +205,7 @@ class EmployeeController extends BaseController
                 $status=422;
 //            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
             } else {
-                $ind = $this->employeeRepo->update($request);
+                $ind = $this->accountRepo->update($request);
                 $s=TRUE;
                 $m='Successful';
                 $status=200;
@@ -244,7 +242,7 @@ class EmployeeController extends BaseController
                 $status=422;
 //            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
             } else {
-                $interest = $this->employeeRepo->destroy($request);
+                $interest = $this->accountRepo->destroy($request);
                 $s=TRUE;
                 $m='Successful';
                 $status=200;
@@ -261,11 +259,6 @@ class EmployeeController extends BaseController
 
         return response()->json(['success' => $s, 'message' => $m,], $status);
 
-    }
-    public function uid()
-    {
-        $uid=$this->employeeRepo->filterSingleDT()->pluck('id');
-        return $uid;
     }
 
     }
