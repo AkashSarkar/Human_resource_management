@@ -36,7 +36,7 @@ Route::group(['Module' => 'User', 'namespace' => 'Modules\User\Controllers', 'mi
 
     Route::post('list-'.$module_prefix.'-datatable', $module.'Controller@jsonDataTable')->name('list-'.$module_prefix.'-datatable');
 
-    //Account Module
+    //Position Module
     $module='Position';
     $module_prefix=strtolower($module);
     Route::get($module_prefix, $module.'Controller@index')->name($module_prefix);

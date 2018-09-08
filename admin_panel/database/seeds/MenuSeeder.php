@@ -79,5 +79,39 @@ class MenuSeeder extends Seeder
             '_sort' => '3',
         ]);
 
+        DB::table('menus')->insert([
+            'id' => 9,
+            'uri_name' => '',
+            'url' => '',
+            'label' => 'Attendance',
+            '_parent_id' => '0',
+            '_sort' => '2',
+        ]);
+        DB::table('menus')->insert([
+            'id' => 10,
+            'uri_name' => 'attendance',
+            'url' => 'attendance',
+            'label' => 'Mark Attendance',
+            '_parent_id' => '9',
+            '_sort' => '2',
+        ]);
+        DB::table('menus')->insert([
+            'id' => 11,
+            'uri_name' => 'view',
+            'url' => 'view',
+            'label' => 'View Attendance',
+            '_parent_id' => '9',
+            '_sort' => '2',
+        ]);
+        DB::table('menus')->insert([
+            'id' => 12,
+            'uri_name' => 'leave',
+            'url' => 'leave',
+            'label' => 'Leave Types',
+            '_parent_id' => '9',
+            '_sort' => '2',
+        ]);
+
+
     }
 }

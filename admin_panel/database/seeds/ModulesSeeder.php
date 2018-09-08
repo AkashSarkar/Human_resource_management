@@ -48,6 +48,18 @@ class ModulesSeeder extends Seeder
             'name' => 'Account',
             'tag' => 'account'
         ]);
+        DB::table('modules')->insert([
+            'name' => 'Mark Attendance',
+            'tag' => 'mark'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'View Attendance',
+            'tag' => 'view'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Leave Types',
+            'tag' => 'leave'
+        ]);
 
     }
 }

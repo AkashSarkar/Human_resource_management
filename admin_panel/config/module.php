@@ -8,6 +8,6 @@ return [
         "Department",
         "Notice",
         "User",
-        "Employee"
+        "Attendance"
     )
 ];
