@@ -36,10 +36,8 @@ class PositionController extends BaseController
 
     public function index()
     {
-//        dd("hi");
-
-//        $model = $this->employeeRepo->filterDT();
-//        dd($model);
+//        $m=$this->positionRepo->filterDT();
+//        dd($m);rr
         return view('User::position');
     }
 
@@ -53,17 +51,14 @@ class PositionController extends BaseController
 
             $columns = array(
                 0 => 'user_id',
-                1 => 'ac_name',
-                2 => 'ac_number',
-                3 => 'bank',
-                4 => 'ifsc',
-                5 => 'pan',
-                6 => 'branch',
+                1 => 'd_name',
+                2 => 'designation',
+                3 => 'doj',
+                4 => 'salary',
+                5 => 'status',
 
             );
             $columns_condition = array(
-                'ac_name' => "like",
-                'ac_number' => "like",
             );
             $foreign_col = [
 
@@ -75,8 +70,7 @@ class PositionController extends BaseController
 
             $glob_searchable_col = [
                 "companies" => [
-                    0 => 'ac_name',
-                    1 => 'ac_number',
+
                 ]
 
             ];
@@ -121,23 +115,22 @@ class PositionController extends BaseController
             $inputs = array(
 
                 'employee_id'=>$request['employee_id'],
-                'account_name'=>$request['account_name'],
-                'account_number'=>$request['account_number'],
-                'bank_name'=>$request['bank_name'],
-                'ifsc'=>$request['ifsc'],
-                'pan_number'=>$request['pan_number'],
-                'branch'=>$request['branch'],
+                'department'=>$request['department'],
+                'designation'=>$request['designation'],
+                'date_of_joining'=>$request['date_of_joining'],
+                'date_of_exit'=>$request['date_of_exit'],
+                'salary'=>$request['salary'],
+                'status'=>$request['status']
             );
             $connection = 'pgsql_user';
             $rules = array(
 
-                'employee_id'=>"required|unique:$connection.bank_acs,user_id",
-                'account_name'=>"required",
-                'account_number'=>"required|min:10|max:20|unique:$connection.bank_acs,ac_number",
-                'bank_name'=>"required|min:4|max:50",
-                'ifsc'=>"required|max:20",
-                'pan_number'=>"required|min:10|max:20",
-                'branch'=>"required|min:6|max:200",
+                'employee_id'=>"required|unique:$connection.companies,user_id",
+                'department'=>"required",
+                'designation'=>"required",
+                'date_of_joining'=>"required",
+                'salary'=>"required|max:8",
+                'status'=>"required",
 
 
             );
@@ -175,24 +168,23 @@ class PositionController extends BaseController
             $inputs = array(
 
                 'e_employee_id'=>$request['e_employee_id'],
-                'e_account_name'=>$request['e_account_name'],
-                'e_account_number'=>$request['e_account_number'],
-                'e_bank_name'=>$request['e_bank_name'],
-                'e_ifsc'=>$request['e_ifsc'],
-                'e_pan_number'=>$request['e_pan_number'],
-                'e_branch'=>$request['e_branch'],
+                'e_department'=>$request['e_department'],
+                'e_designation'=>$request['e_designation'],
+                'e_date_of_joining'=>$request['e_date_of_joining'],
+                'e_date_of_exit'=>$request['e_date_of_exit'],
+                'e_salary'=>$request['e_salary'],
+                'e_status'=>$request['e_status']
             );
             $connection = 'pgsql_user';
             $id=$request->id;
             $rules = array(
 
-                'e_employee_id'=>"required|unique:$connection.bank_acs,user_id,$id",
-                'e_account_name'=>"required",
-                'e_account_number'=>"required|min:10|max:20|unique:$connection.bank_acs,ac_number,$id",
-                'e_bank_name'=>"required|min:4|max:50",
-                'e_ifsc'=>"required|max:20",
-                'e_pan_number'=>"required|min:10|max:20",
-                'e_branch'=>"required|min:6|max:200",
+                'e_employee_id'=>"required|unique:$connection.companies,user_id,$id",
+                'e_department'=>"required",
+                'e_designation'=>"required",
+                'e_date_of_joining'=>"required",
+                'e_salary'=>"required|max:8",
+                'e_status'=>"required",
 
 
             );

@@ -16,19 +16,48 @@
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-
-                {{--account_name--}}
-                <?php $input_name = "account_name"; $place_holder="Account Name";?>
+                {{--Department id--}}
+                <?php $input_name = "department"; $place_holder="Department";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                        <option value="">Select Designation</option>
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--Designation --}}
+                <?php $input_name = "designation"; $place_holder="Designation";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--date of joining--}}
+                <?php $input_name = "date_of_joining";$place_holder="Date of joining";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="date" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
                            placeholder="{{$place_holder}}"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-                {{--account_number--}}
-                <?php $input_name = "account_number";$place_holder="Account Number";?>
+
+                {{--date of exit--}}
+                <?php $input_name = "date_of_exit";$place_holder="Date of exit";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="date" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
+                           autocomplete="off" required="required">
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--salary--}}
+                <?php $input_name = "salary";$place_holder="Salary";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
                     <input type="number" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
@@ -37,47 +66,16 @@
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-                {{--bank_name--}}
-                <?php $input_name = "bank_name";$place_holder="Bank Name";?>
+                {{--status--}}
+                <?php $input_name = "status"; $place_holder="Status";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                        <option value="True">Active</option>
+                        <option value="False">Inactive</option>
+                    </select>
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
-
-                {{--ifsc --}}
-                <?php $input_name = "ifsc";$place_holder="IFSC Code"?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-                {{--pan_number--}}
-                <?php $input_name = "pan_number";$place_holder="Pan Number";?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="number" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-                {{--branch--}}
-                <?php $input_name = "branch";$place_holder="Branch";?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-
             </div>
             <!-- /.box-body -->
         </form>

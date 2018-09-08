@@ -6,7 +6,7 @@
     <div class="box-content">
         <form id="{{$form_id}}" class="form-horizontal" role="form" onsubmit="javascripts(0)">
             <div class="box-body">
-                {{--Employee id--}}
+                {{--{--Employee id--}}
                 <?php $input_name = "e_employee_id"; $place_holder="Employee id";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
@@ -15,19 +15,46 @@
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-
-                {{--account_name--}}
-                <?php $input_name = "e_account_name"; $place_holder="Account Name";?>
+                {{--Department id--}}
+                <?php $input_name = "e_department"; $place_holder="Department";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--Designation --}}
+                <?php $input_name = "e_designation"; $place_holder="Designation";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--date of joining--}}
+                <?php $input_name = "e_date_of_joining";$place_holder="Date of joining";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="date" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
                            placeholder="{{$place_holder}}"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-                {{--account_number--}}
-                <?php $input_name = "e_account_number";$place_holder="Account Number";?>
+                {{--date of exit--}}
+                <?php $input_name = "e_date_of_exit";$place_holder="Date of exit";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="date" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
+                           autocomplete="off" required="required">
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+
+                {{--salary--}}
+                <?php $input_name = "e_salary";$place_holder="Salary";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
                     <input type="number" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
@@ -36,43 +63,14 @@
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
 
-                {{--bank_name--}}
-                <?php $input_name = "e_bank_name";$place_holder="Bank Name";?>
+                {{--status--}}
+                <?php $input_name = "e_status"; $place_holder="Status";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-                {{--ifsc --}}
-                <?php $input_name = "e_ifsc";$place_holder="IFSC Code"?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-                {{--pan_number--}}
-                <?php $input_name = "e_pan_number";$place_holder="Pan Number";?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="number" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
-                    <span class="help-block error eMsg_{{$input_name}}"></span>
-                </div>
-
-                {{--branch--}}
-                <?php $input_name = "e_branch";$place_holder="Branch";?>
-                <div class="form-group">
-                    <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
-                           placeholder="{{$place_holder}}"
-                           autocomplete="off" required="required">
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                        <option value="true">Active</option>
+                        <option value="false">Inactive</option>
+                    </select>
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
             </div>

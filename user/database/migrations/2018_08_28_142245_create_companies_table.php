@@ -19,6 +19,8 @@ class CreateCompaniesTable extends Migration
             $table->integer('department_id')->unsigned();
             $table->string('designation');
             $table->date('doj');
+            $table->date('doe')->nullable();
+            $table->boolean('status')->default(1);
             $table->integer('salary');
             $table->timestamps();
         });

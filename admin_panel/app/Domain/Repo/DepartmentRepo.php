@@ -19,4 +19,6 @@ interface DepartmentRepo
     function destroy($obj);
     function update($obj);
     function show($obj);
+
+    function details();
 }

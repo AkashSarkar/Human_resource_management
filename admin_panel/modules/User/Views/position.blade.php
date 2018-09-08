@@ -39,12 +39,11 @@
             <thead>
             <tr>
                 <th>Employee ID</th>
-                <th>Account Holder Name</th>
-                <th>Account Number</th>
-                <th>Bank Name</th>
-                <th>IFSC Code</th>
-                <th>Pan Number</th>
-                <th>Branch</th>
+                <th>Department Name</th>
+                <th>Designation</th>
+                <th>At Work</th>
+                <th>Salary</th>
+                <th>Status</th>
                 <th>Action</th>
             </tr>
             </thead>

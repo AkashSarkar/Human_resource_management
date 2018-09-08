@@ -217,5 +217,9 @@ class DepartmentController extends BaseController
         return response()->json(['success' => $s, 'message' => $m,], $status);
 
     }
+    public function details(){
+        $details=$this->departmentRepo->details();
+        return $details;
+    }
 
     }

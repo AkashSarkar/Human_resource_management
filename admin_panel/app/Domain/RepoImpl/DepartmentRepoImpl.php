@@ -70,4 +70,8 @@ class DepartmentRepoImpl implements DepartmentRepo
         $edu = model::select('name')->where('id', $obj->id);
         return $edu;
     }
+    public function details()
+    {
+        return model::all();
+    }
 }

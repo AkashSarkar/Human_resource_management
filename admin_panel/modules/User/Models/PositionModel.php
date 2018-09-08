@@ -14,7 +14,7 @@ class PositionModel extends Model
     protected $connection = 'pgsql_user';
     protected $table='companies';
     protected $fillable = [
-        'ac_name','ac_number','bank','ifsc','pan','branch','user_id','created_at',
+        'department_id','designation','doj','doe','status','salary','user_id','created_at',
     ];
 
     /**

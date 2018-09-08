@@ -28,17 +28,16 @@ $(function () {
             // "drawCallback": customInitCompelete,
             "ajax": {
                 'type': 'POST',
-                'url': $("#"+module_prefix+"_datatable").val(),
+                'url': $("#" + module_prefix + "_datatable").val(),
                 'data': data,
             },
             "columns": [
                 {"data": "user_id"},
-                {"data": "ac_name"},
-                {"data": "ac_number"},
-                {"data": "bank"},
-                {"data": "ifsc"},
-                {"data": "pan"},
-                {"data": "branch"},
+                {"data": "d_name"},
+                {"data": "designation"},
+                {"data": "doj"},
+                {"data": "salary"},
+                {"data": "status"},
                 {"data": "id", "sortable": false, "orderable": false, "searchable": false},
             ],
             "columnDefs": [
@@ -64,17 +63,21 @@ $(function () {
                 },
                 {
                     "targets": 5,
-
-                },
-                {
-                    "targets": 6,
+                    'render': function (data, type, row, meta) {
+                        var html = '';
+                        if (data)
+                            html += '<button class="btn btn-sm btn-success"  >Active</button>';
+                        else
+                            html += '<button class="btn btn-sm btn-danger"  >Inactive</button>';
+                        return html;
+                    }
 
                 },
                 {
                     "orderable": false,
                     "searchable": false,
                     "className": "",
-                    "targets": 7,
+                    "targets": 6,
                     "width": "10%",
                     'render': function (data, type, row, meta) {
                         var html = '';
@@ -94,7 +97,6 @@ $(function () {
         });
 
         /*Employee user_id*/
-
         $.ajax({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -103,8 +105,7 @@ $(function () {
             url: 'employee/uid',
             success: function (data) {
                 //console.log(data);
-                $.each(data,function(key, value)
-                {
+                $.each(data, function (key, value) {
                     $("#e_employee_id").append('<option value=' + value + '>' + value + '</option>');
 
                     $("#employee_id").append('<option value=' + value + '>' + value + '</option>');
@@ -115,6 +116,59 @@ $(function () {
             }
         });
 
+        //department and designation
+        let department = [];
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: 'GET',
+            url: 'department/details',
+            success: function (data) {
+                // console.log(data);
+                department = data;
+                $.each(data, function (key, value) {
+                    $("#department").append('<option value=' + value.id + '>' + value.department + '</option>');
+                    $("#e_department").append('<option value=' + value.id + '>' + value.department + '</option>');
+                });
+            },
+            error: function (data) {
+                errorForm(data, edit_form_id);
+            }
+        });
+        $('#department').on('change', function (e) {
+            var dep = this.value;
+            $.each(department, function (key, value) {
+                if (value.id == dep) {
+                    let des = JSON.parse(value.designation);
+                    let html = '';
+                    // $("#designation").remove('option');
+                    $.each(des, function (k, v) {
+                        html += '<option value=' + v + '>' + v + '</option>';
+                    });
+                    $("#designation").html(html);
+                }
+
+            })
+
+        });
+
+        $('#e_department').on('change', function (e) {
+            var dep = this.value;
+            $.each(department, function (key, value) {
+                if (value.id == dep) {
+                    let des = JSON.parse(value.designation);
+                    let html = '';
+                    // $("#e_designation").remove('option');
+                    $.each(des, function (k, v) {
+                        html += '<option value=' + v + '>' + v + '</option>';
+                    });
+                    $("#e_designation").html(html);
+                }
+
+            })
+
+        });
 
         //new Emloyee Account Details add
         $('#add-' + module_dash + '-btn').on('click', function () {
@@ -135,7 +189,7 @@ $(function () {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 type: 'POST',
-                url: $('#'+module_prefix+'_create').val(),
+                url: $('#' + module_prefix + '_create').val(),
                 data: obj,
                 statusCode: customStatusCodeRes,
                 success: function (data) {
@@ -151,37 +205,52 @@ $(function () {
             });
         });
         //assign in edit from
-        let id='',uid='';
+        let id = '', uid = '';
         /*get value from datatable*/
-        var oTable =  $('#listDataTable').dataTable();
-        $('#listDataTable').on('click', 'tr', function(){
+        var oTable = $('#listDataTable').dataTable();
+        $('#listDataTable').on('click', 'tr', function () {
             var oData = oTable.fnGetData(this);
-           if(oData)
-           {
-               id=oData.id;
-               $("#e_employee_id").val(oData.user_id);
-               $("#e_account_name").val(oData.ac_name);
-               $("#e_account_number").val(oData.ac_number);
-               $("#e_bank_name").val(oData.bank);
-               $("#e_pan_number").val(oData.pan);
-               $("#e_ifsc").val(oData.ifsc);
-               $("#e_branch").val(oData.branch);
-               console.log(oData);
-           }
+            if (oData) {
+                id = oData.id;
+                $("#e_employee_id").val(oData.user_id);
+                $("#e_department").val(oData.department_id);
+                var dep = oData.department_id;
+                $.each(department, function (key, value) {
+                    if (value.id == dep) {
+                        let des = JSON.parse(value.designation);
+                        let html = ''
+                        // $("#e_designation").remove('option');
+                        $.each(des, function (k, v) {
+                            html += '<option value=' + v + '>' + v + '</option>'
+                        })
+                        $("#e_designation").html(html);
+                    }
+
+                });
+
+
+                $("#e_date_of_joining").val(oData.doj);
+                $("#e_date_of_exit").val(oData.doe);
+                $("#e_salary").val(oData.salary);
+                var s = oData.status.toString();
+                $("#e_status").val(s);
+                console.log(oData.status);
+                console.log($("#e_status").val());
+            }
         });
         //delete
-        $("#listDataTable tbody").on("click","button.del",function () {
-            var b=$(this);
-            let id =$(this).val();
-            if(confirm("Are you want to delete this data?")){
+        $("#listDataTable tbody").on("click", "button.del", function () {
+            var b = $(this);
+            let id = $(this).val();
+            if (confirm("Are you want to delete this data?")) {
                 $.ajax({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                     type: 'DELETE',
-                    url: $('#'+module_prefix+'_delete').val()+'/'+id,
-                    data:{
-                        id:id
+                    url: $('#' + module_prefix + '_delete').val() + '/' + id,
+                    data: {
+                        id: id
                     },
                     statusCode: customStatusCodeRes,
                     success: function (data) {
@@ -205,7 +274,7 @@ $(function () {
             var custom_formData = new FormData();
             var elements = document.getElementById(edit_form_id).elements;
             var obj = {};
-            obj['id']=id;
+            obj['id'] = id;
             for (var i = 0; i < elements.length; i++) {
                 var item = elements.item(i);
                 obj[item.id] = item.value;
@@ -216,7 +285,7 @@ $(function () {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 type: 'PATCH',
-                url: $('#'+module_prefix+'_edit').val()+'/'+id,
+                url: $('#' + module_prefix + '_edit').val() + '/' + id,
                 data: obj,
                 statusCode: customStatusCodeRes,
                 success: function (data) {
@@ -231,7 +300,6 @@ $(function () {
                 }
             });
         });
-
 
 
     });

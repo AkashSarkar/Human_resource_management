@@ -10,9 +10,11 @@ Route::group(['Module' => 'Department', 'namespace' => 'Modules\Department\Contr
 
     Route::get('department', 'DepartmentController@index')->name('department');
     Route::post('department', 'DepartmentController@store')->name('department');
-    Route::get('department/{id}', 'DepartmentController@show');
+//    Route::get('department/{id}', 'DepartmentController@show');
     Route::patch('department/{id}', 'DepartmentController@update');
     Route::delete('department/{id}', 'DepartmentController@destroy');
+
+    Route::get('department/details', 'DepartmentController@details');
 
 
     Route::post('list-department-datatable', 'DepartmentController@jsonDataTable')->name('list-department-datatable');
