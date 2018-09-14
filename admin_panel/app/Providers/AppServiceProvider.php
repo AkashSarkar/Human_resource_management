@@ -56,5 +56,11 @@ class AppServiceProvider extends ServiceProvider
             'App\Domain\RepoImpl\PositionRepoImpl');
         $this->app->bind('App\Domain\Repo\LeaveTypesRepo',
             'App\Domain\RepoImpl\LeaveTypesRepoImpl');
+        $this->app->bind('App\Domain\Repo\AttendanceRepo',
+            'App\Domain\RepoImpl\AttendanceRepoImpl');
+        $this->app->bind('App\Domain\Repo\HolidayRepo',
+            'App\Domain\RepoImpl\HolidayRepoImpl');
+        $this->app->bind('App\Domain\Repo\AwardRepo',
+            'App\Domain\RepoImpl\AwardRepoImpl');
     }
 }

@@ -112,6 +112,23 @@ class MenuSeeder extends Seeder
             '_sort' => '2',
         ]);
 
+        DB::table('menus')->insert([
+            'id' => 13,
+            'uri_name' => 'award',
+            'url' => 'award',
+            'label' => 'Awards',
+            '_parent_id' => '0',
+            '_sort' => '3',
+        ]);
+        DB::table('menus')->insert([
+            'id' => 14,
+            'uri_name' => 'holiday',
+            'url' => 'holiday',
+            'label' => 'Holidays',
+            '_parent_id' => '0',
+            '_sort' => '3',
+        ]);
+
 
     }
 }

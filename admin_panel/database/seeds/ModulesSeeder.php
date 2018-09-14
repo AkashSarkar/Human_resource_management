@@ -60,6 +60,13 @@ class ModulesSeeder extends Seeder
             'name' => 'Leave Types',
             'tag' => 'leave'
         ]);
-
+        DB::table('modules')->insert([
+            'name' => 'Award',
+            'tag' => 'award'
+        ]);
+        DB::table('modules')->insert([
+            'name' => 'Holiday',
+            'tag' => 'holiday'
+        ]);
     }
 }
