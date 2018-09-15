@@ -2,43 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd4aeba9-fd39-41ce-ac32-b6f9fad8b853" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/Repo/AttendanceRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/Repo/AwardRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/Repo/HolidayRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/AttendanceRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/AwardRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/HolidayRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Attendance/Controllers/AttendanceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Attendance/Models/AttendanceModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Attendance/Views/attendance.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Controllers/AwardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Models/AwardModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Views/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Holiday/Controllers/HolidayController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Holiday/Models/HolidayModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Holiday/Views/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/modules/Holiday/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/Attendance/attendance/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/award/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/holiday/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/holiday/modals/_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/holiday/modals/_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/dataSources/2f3147e5-6b07-47c1-a797-8b3c0db4ea64/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin_panel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/config/module.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/config/module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/database/seeds/MenuSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/MenuSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/database/seeds/ModulesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/database/seeds/ModulesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Attendance/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Attendance/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae744a4-950f-4e41-bbb7-24de4600fddd/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/AwardRepoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/app/Domain/RepoImpl/AwardRepoImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Auth/Views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Auth/Views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Award/Controllers/AwardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Controllers/AwardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Award/Models/AwardModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Models/AwardModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/modules/Award/Views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/modules/Award/Views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/award/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/public/resources/assets/backjs/award/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/modals/award/modals/_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/resources/views/template/_head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/resources/views/template/_head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/.php_cs.dist" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/.php_cs.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/ChangeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/ChangeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/src/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/phpunit/php-file-iterator/src/Factory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/CHANGES" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/CHANGES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin_panel/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendances_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendances_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +133,7 @@
     <session id="-1539997968">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="57" />
+          <entry key="project.closed" value="62" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="3" />
@@ -140,7 +146,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -150,10 +156,11 @@
           <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -201,7 +208,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendances_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -210,11 +217,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="255">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -318,8 +325,8 @@
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_142245_create_companies_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_28_155731_create_attendances_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_09_10_071537_create_holidays_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php" />
       </list>
     </option>
   </component>
@@ -445,6 +452,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -483,7 +491,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -577,16 +584,22 @@
       <workItem from="1536910595121" duration="938000" />
       <workItem from="1536912403567" duration="658000" />
       <workItem from="1536914238179" duration="949000" />
+      <workItem from="1536917226429" duration="1277000" />
+      <workItem from="1536941286198" duration="826000" />
+      <workItem from="1536942578289" duration="599000" />
+      <workItem from="1536945226539" duration="1198000" />
+      <workItem from="1536947042322" duration="508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54565000" />
+    <option name="totallyTimeSpent" value="58973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3007576" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32651514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -601,7 +614,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2515528" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26298702" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -774,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/MenuSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -820,6 +826,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_28_155443_create_awards_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>

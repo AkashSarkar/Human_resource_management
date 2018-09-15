@@ -18,7 +18,6 @@ class CreateAwardsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('award');
             $table->string('month');
-            $table->string('year');
             $table->string('gift');
             $table->timestamps();
         });

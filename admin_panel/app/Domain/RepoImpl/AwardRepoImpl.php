@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-use Modules\User\Models\AccountModel as model;
+use Modules\Award\Models\AwardModel as model;
 use phpDocumentor\Reflection\Types\Null_;
 
 class AwardRepoImpl implements repo
@@ -23,7 +23,7 @@ class AwardRepoImpl implements repo
 
     public function filterDT()
     {
-        return model::select('id','user_id','award','month','year','gift');
+        return model::select('id','user_id','award','month','gift');
     }
 
 
@@ -41,9 +41,8 @@ class AwardRepoImpl implements repo
     {
         return model::create([
             'user_id'=>$obj['employee_id'],
-            'award'=>$obj['award'],
+            'award'=>$obj['award_name'],
             'month'=>$obj['month'],
-            'year'=>$obj['year'],
             'gift'=>$obj['gift'],
         ]);
     }
@@ -65,9 +64,8 @@ class AwardRepoImpl implements repo
         if ($s) {
             $s->user_id=$request['e_employee_id'];
             $s->month=$request['e_month'];
-            $s->year=$request['e_year'];
             $s->gift=$request['e_gift'];
-            $s->award=$request['e_award'];
+            $s->award=$request['e_award_name'];
 
             $s->save();
         }
