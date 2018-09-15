@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Validation\Rules\In;
 use App\Models\ErrorR;
-
+use Carbon\Carbon as carbon;
 use Illuminate\Support\Facades\Validator;
 
 class AttendanceController extends BaseController
@@ -45,7 +45,7 @@ class AttendanceController extends BaseController
         try {
 
             $columns = array(
-                0 => 'user_id',
+                0 => 'id',
                 1 => 'name'
             );
             $columns_condition = array(
@@ -100,32 +100,21 @@ class AttendanceController extends BaseController
 //        return $this->resp($responseData, $responseData['status_code']);
         return response()->json($responseData);
     }
+
     public function store(Request $request)
     {
-        try{
-            $inputs = array(
-                'leave' => $request->leave,
-            );
-            $rules = array(
-                'leave' => "required|max:128",
-            );
-            $validate = Validator::make($inputs, $rules);
-
-            if ($validate->fails()) {
-                $errors = $validate->errors();
-                $errors = json_decode($errors);
-                $s=FALSE;
-                $m=$errors;
-                $status=422;
-//            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-            } else {
-                $interest = $this->attendancesRepo->create($request);
-                $s=TRUE;
-                $m='Successful';
-                $status=200;
+        $status = 200;
+        $payload = [];
+        try {
+            $payload["id"] = $request->id;
+            $payload["date"] = carbon::now()->format('Y-m-d');
+            $interest = $this->attendancesRepo->create($payload);
+            $s = TRUE;
+            $m = 'Successful';
+            $status = 200;
 //            return response()->json(['success' => TRUE], 200);
-            }
-        }catch (\Exception $e) {
+
+        } catch (\Exception $e) {
             ErrorR::efail($e);
             $s = False;
             $m = "Technical Error";
@@ -134,47 +123,49 @@ class AttendanceController extends BaseController
             Performance::log();
         }
 
-        return response()->json(['success' => $s, 'message' => $m,], $status);
+        return response()->json(['success' => $s, 'message' => $m], 200);
     }
 
     public function update(Request $request)
     {
-        try{
-            $inputs = array(
-                'e_leave' => $request->e_leave,
-            );
-            $rules = array(
-                'e_leave' => "required|max:128",
-            );
-            $validate = Validator::make($inputs, $rules);
-            if ($validate->fails()) {
-                $errors = $validate->errors();
-                $errors = json_decode($errors);
-                $s=FALSE;
-                $m=$errors;
-                $status=422;
-//            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
-            } else {
-                $ind = $this->attendancesRepo->update($request);
-                $s=TRUE;
-                $m='Successful';
-                $status=200;
-//            return response()->json(['success' => TRUE], 200);
-            }
-        }catch (\Exception $e) {
-            ErrorR::efail($e);
-            $s = False;
-            $m = "Technical Error";
-            $status = $e->getCode();
-        } finally {
-            Performance::log();
-        }
+        /*  try{
+              $inputs = array(
+                  'e_leave' => $request->e_leave,
+              );
+              $rules = array(
+                  'e_leave' => "required|max:128",
+              );
+              $validate = Validator::make($inputs, $rules);
+              if ($validate->fails()) {
+                  $errors = $validate->errors();
+                  $errors = json_decode($errors);
+                  $s=FALSE;
+                  $m=$errors;
+                  $status=422;
+  //            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
+              } else {
+                  $ind = $this->attendancesRepo->update($request);
+                  $s=TRUE;
+                  $m='Successful';
+                  $status=200;
+  //            return response()->json(['success' => TRUE], 200);
+              }
+          }catch (\Exception $e) {
+              ErrorR::efail($e);
+              $s = False;
+              $m = "Technical Error";
+              $status = $e->getCode();
+          } finally {
+              Performance::log();
+          }
 
-        return response()->json(['success' => $s, 'message' => $m,], $status);
+          return response()->json(['success' => $s, 'message' => $m,], $status);*/
     }
+
     public function destroy(Request $request)
     {
-        try{
+        $payload = [];
+        try {
             $inputs = array(
                 'id' => $request->id,
             );
@@ -187,18 +178,20 @@ class AttendanceController extends BaseController
             if ($validate->fails()) {
                 $errors = $validate->errors();
                 $errors = json_decode($errors);
-                $s=FALSE;
-                $m=$errors;
-                $status=422;
+                $s = FALSE;
+                $m = $errors;
+                $status = 422;
 //            return response()->json(['success' => FALSE, 'message' => $errors,], 422);
             } else {
-                $interest = $this->attendancesRepo->destroy($request);
-                $s=TRUE;
-                $m='Successful';
-                $status=200;
+                $payload["id"] = $request->id;
+                $payload["date"] = carbon::now()->format('Y-m-d');
+                $interest = $this->attendancesRepo->destroy($payload);
+                $s = TRUE;
+                $m = 'Successful';
+                $status = 200;
 //            return response()->json(['success' => TRUE, 'interest' => $interest], 200);
             }
-        }catch (\Exception $e) {
+        } catch (\Exception $e) {
             ErrorR::efail($e);
             $s = False;
             $m = "Technical Error";
@@ -211,4 +204,4 @@ class AttendanceController extends BaseController
 
     }
 
-    }
+}

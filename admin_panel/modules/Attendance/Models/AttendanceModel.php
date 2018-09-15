@@ -13,7 +13,7 @@ class AttendanceModel extends Model
     protected $connection = 'pgsql_user';
     protected $table='attendances';
     protected $fillable = [
-        'id','status','user_id','date','created_at',
+        'status','user_id','date','created_at',
     ];
 
     /**

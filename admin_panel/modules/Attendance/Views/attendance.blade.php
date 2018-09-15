@@ -51,7 +51,12 @@
     <input type="hidden" id="{{$module_prefix}}_create" value="{{route($module_prefix)}}">
     <input type="hidden" id="{{$module_prefix}}_edit" value="{{route($module_prefix)}}">
     <input type="hidden" id="{{$module_prefix}}_delete" value="{{route($module_prefix)}}">
-
+    <script>
+        var module_udash = "{{$module_udash}}"
+        var module_dash = "{{$module_dash}}";
+        {{--var add_form_id = "{{$form_id}}";--}}
+        var module_prefix = "{{$module_prefix}}";
+    </script>
 
 @endsection
 @push('styles')

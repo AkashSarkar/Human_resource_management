@@ -17,7 +17,7 @@ class CreateAttendancesTable extends Migration
             $table->increments('id');
             $table->boolean('status');
             $table->integer('user_id')->unsigned();
-            $table->date('date');
+            $table->string('date');
             $table->timestamps();
         });
     }
