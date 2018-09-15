@@ -36,12 +36,13 @@ $(function () {
                 {"data": "award"},
                 {"data": "gift"},
                 {"data": "month"},
-                {"data": "year"},
+                {"data": "month"},
                 {"data": "id", "sortable": false, "orderable": false, "searchable": false},
             ],
             "columnDefs": [
                 {
                     "targets": 0,
+                    "width": "10%",
 
                 },
                 {
@@ -54,12 +55,28 @@ $(function () {
                 },
                 {
                     "targets": 3,
+                    'render': function (data, type, row, meta) {
+                        var MONTH = ["January","February","March", "April","May", "June", "July", "August", "September", "October", "November", "December"];
+                        var a = new Date(data);
+                        var d=MONTH[a.getMonth()];
+                        return d;
+
+
+                    }
 
                 },
                 {
                     "targets": 4,
+                    'render': function (data, type, row, meta) {
+                        var a = new Date(data);
+                        var d=a.getFullYear();
+                        return d;
+
+
+                    }
 
                 },
+
                 {
                     "orderable": false,
                     "searchable": false,
@@ -150,12 +167,9 @@ $(function () {
            {
                id=oData.id;
                $("#e_employee_id").val(oData.user_id);
-               $("#e_account_name").val(oData.ac_name);
-               $("#e_account_number").val(oData.ac_number);
-               $("#e_bank_name").val(oData.bank);
-               $("#e_pan_number").val(oData.pan);
-               $("#e_ifsc").val(oData.ifsc);
-               $("#e_branch").val(oData.branch);
+               $("#e_award_name").val(oData.award);
+               $("#e_month").val(oData.month);
+               $("#e_gift").val(oData.gift);
                console.log(oData);
            }
         });

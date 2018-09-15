@@ -42,7 +42,7 @@
                 <th>Employee Id</th>
                 <th>Award</th>
                 <th>Gift</th>
-                <th>month</th>
+                <th>Month</th>
                 <th>Year</th>
                 <th>Action</th>
             </tr>

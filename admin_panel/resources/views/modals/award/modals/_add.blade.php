@@ -6,17 +6,35 @@
     <div class="box-content">
         <form id="{{$form_id}}" class="form-horizontal" role="form" onsubmit="javascripts(0)">
             <div class="box-body">
-                {{--Date--}}
-                <?php $input_name = "date"; $place_holder="Date";?>
+                {{--Employee id--}}
+                <?php $input_name = "employee_id"; $place_holder="Employee id";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
-                    <input type="date" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+                {{--Award--}}
+                <?php $input_name = "award_name"; $place_holder="Award name";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
                            placeholder="{{$place_holder}}"
                            autocomplete="off" required="required">
                     <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
-                {{--Occasion--}}
-                <?php $input_name = "occasion"; $place_holder="Occasion";?>
+
+                {{--Month--}}
+                <?php $input_name = "month"; $place_holder="Month";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="month" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
+                           autocomplete="off" required="required">
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+                {{--gift--}}
+                <?php $input_name = "gift"; $place_holder="Gift";?>
                 <div class="form-group">
                     <label for="{{$input_name}}">{{$place_holder}}</label>
                     <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"

@@ -13,7 +13,7 @@ class AwardModel extends Model
     protected $connection="pgsql_user";
     protected $table='awards';
     protected $fillable = [
-        'user_id','award','month','year','gift','created_at',
+        'user_id','award','month','gift','created_at',
     ];
 
     /**

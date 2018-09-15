@@ -2,18 +2,32 @@
 <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{{asset('bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
+<!-- SlimScroll -->
+<script src="{{asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{asset('bower_components/fastclick/lib/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
+<!--Full calender-->
+<script src="{{asset('bower_components/moment/moment.js')}}"></script>
+<script src="{{asset('bower_components/fullcalendar/dist/fullcalendar.min.js')}}"></script>
+
+
 <script src="{{asset('resources/assets/plugins/jquery-growl/javascripts/jquery.growl.js')}}"></script>
 <!-- Sparkline -->
 {{--<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>--}}
 <!-- jvectormap  -->
 {{--<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>--}}
 {{--<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>--}}
-<!-- SlimScroll -->
-<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 <!-- ChartJS -->
 {{--<script src="bower_components/chart.js/Chart.js"></script>--}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->

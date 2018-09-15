@@ -49,7 +49,6 @@ class AwardController extends BaseController
                 1 => 'award',
                 2 => 'gift',
                 3 => 'month',
-                4=>'year',
             );
             $columns_condition = array(
                 'award' => "like",
@@ -112,7 +111,6 @@ class AwardController extends BaseController
                 'employee_id' => $request->employee_id,
                 'award_name' => $request->award_name,
                 'month' => $request->month,
-                'year' => $request->year,
                 'gift' =>$request->gift,
             );
 
@@ -121,7 +119,6 @@ class AwardController extends BaseController
                 'gift' => "required|max:128",
                 'employee_id' => "required",
                 'month' => "required",
-                'year' => "required",
 
             );
             $validate = Validator::make($inputs, $rules);
@@ -159,7 +156,6 @@ class AwardController extends BaseController
                 'e_employee_id' => $request->e_employee_id,
                 'e_award_name' => $request->e_award_name,
                 'e_month' => $request->e_month,
-                'e_year' => $request->e_year,
                 'e_gift' =>$request->e_gift,
             );
 
@@ -168,7 +164,6 @@ class AwardController extends BaseController
                 'e_gift' => "required|max:128",
                 'e_employee_id' => "required",
                 'e_month' => "required",
-                'e_year' => "required",
 
             );
             $validate = Validator::make($inputs, $rules);

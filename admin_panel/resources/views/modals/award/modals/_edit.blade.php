@@ -6,37 +6,41 @@
     <div class="box-content">
         <form id="{{$form_id}}" class="form-horizontal" role="form" onsubmit="javascripts(0)">
             <div class="box-body">
+                {{--Employee id--}}
+                <?php $input_name = "e_employee_id"; $place_holder="Employee id";?>
                 <div class="form-group">
-                    <label for="e_item">Item Name</label>
-                    <input type="text" class="form-control" id="e_item" name="e_item"
-                           placeholder="Item Name"
-                           autocomplete="off" required="required" maxlength="128">
-                    <span class="help-block error eMsg_e_item"></span>
-
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <select class="form-control " style="width: 58rem;" id="{{$input_name}}">
+                    </select>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
+                {{--Award--}}
+                <?php $input_name = "e_award_name"; $place_holder="Award name";?>
                 <div class="form-group">
-                    <label for="purchase">Purchase From</label>
-                    <input type="text" class="form-control" id="e_purchase" name="e_purchase"
-                           placeholder="purchase"
-                           autocomplete="off" required="required" maxlength="128">
-                    <span class="help-block error eMsg_e_purchase"></span>
-
-                </div>
-                <div class="form-group">
-                    <label for="date">Purchase Date</label>
-                    <input type="date" class="form-control" id="e_date" name="e_date"
-                           placeholder="Purchase Date"
-                           autocomplete="off" required="required" >
-                    <span class="help-block error eMsg_e_date"></span>
-
-                </div>
-                <div class="form-group">
-                    <label for="e_price">Price</label>
-                    <input type="number" class="form-control" id="e_price" name="e_price"
-                           placeholder="Price"
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
                            autocomplete="off" required="required">
-                    <span class="help-block error eMsg_e_price"></span>
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
 
+                {{--Month--}}
+                <?php $input_name = "e_month"; $place_holder="Month";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="month" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
+                           autocomplete="off" required="required">
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
+                </div>
+                {{--gift--}}
+                <?php $input_name = "e_gift"; $place_holder="Gift";?>
+                <div class="form-group">
+                    <label for="{{$input_name}}">{{$place_holder}}</label>
+                    <input type="text" class="form-control" id="{{$input_name}}" name="{{$input_name}}"
+                           placeholder="{{$place_holder}}"
+                           autocomplete="off" required="required">
+                    <span class="help-block error eMsg_{{$input_name}}"></span>
                 </div>
             </div>
             <!-- /.box-body -->
