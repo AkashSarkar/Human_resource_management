@@ -62,5 +62,7 @@ class AppServiceProvider extends ServiceProvider
             'App\Domain\RepoImpl\HolidayRepoImpl');
         $this->app->bind('App\Domain\Repo\AwardRepo',
             'App\Domain\RepoImpl\AwardRepoImpl');
+        $this->app->bind('App\Domain\Repo\ApplicationRepo',
+            'App\Domain\RepoImpl\ApplicationRepoImpl');
     }
 }
