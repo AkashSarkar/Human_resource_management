@@ -128,6 +128,14 @@ class MenuSeeder extends Seeder
             '_parent_id' => '0',
             '_sort' => '3',
         ]);
+        DB::table('menus')->insert([
+            'id' => 15,
+            'uri_name' => 'application',
+            'url' => 'application',
+            'label' => 'Leave applications',
+            '_parent_id' => '0',
+            '_sort' => '3',
+        ]);
 
 
     }
