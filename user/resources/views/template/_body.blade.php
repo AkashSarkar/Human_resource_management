@@ -295,15 +295,18 @@
                         <h2 class="panel-title heading-sm pull-left"><i class="fa fa-tasks"></i>My leaves</h2>
                     </div>
                     <div class="panel-body panelHolder">
-
-                        <div class="alert-blocks alert-blocks-info">
-                            <div class="overflow-h">
-                                <strong class="color-dark">Last absent
-                                    <small class="pull-right"><em>22-Oct-2018</em></small>
-                                </strong>
-                                <small class="award-name">-19 day ago</small>
-                            </div>
-                        </div>
+                        @if($my_leaves)
+                            @foreach($my_leaves as $my_leave)
+                                <div class="alert-blocks alert-blocks-info">
+                                    <div class="overflow-h">
+                                        <strong class="color-dark">{{$my_leave->reason}}
+                                            <small class="pull-right"><em>{{$my_leave->date}}</em></small>
+                                        </strong>
+                                        {{--<small class="award-name">-19 day ago</small>--}}
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
 
                         <div id='calendar'></div>
 
