@@ -40,8 +40,6 @@ class CreateForeignTable extends Migration
                 ->references('id')->on('users');
             $table->foreign('l_type_id')
                 ->references('id')->on('leave_types');
-            $table->foreign('a_id')
-                ->references('id')->on('actions');
         });
 //        Schema::table('access', function (Blueprint $table) {
 //            $table->foreign('perm_role_id')
@@ -74,9 +72,6 @@ class CreateForeignTable extends Migration
             ]);
             $table->dropForeign([
                 'l_type_id'
-            ]);
-            $table->dropForeign([
-                'a_id'
             ]);
         });
         Schema::table('attendances', function (Blueprint $table) {

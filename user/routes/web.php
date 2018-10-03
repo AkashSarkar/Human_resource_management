@@ -21,7 +21,8 @@
 //Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/home','UserController@index');
+Route::post('/leave','UserController@post')->name('leave');
 
 
 //ErrorR Log
