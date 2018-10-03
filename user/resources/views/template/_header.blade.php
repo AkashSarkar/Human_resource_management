@@ -1,110 +1,72 @@
-<header class="main-header">
+<!--=== Header ===-->
+<div class="header">
+  <!-- Navbar -->
+  <div class="navbar navbar-default mega-menu" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="fa fa-bars"></span>
+        </button>
+        <a class="navbar-brand" href="/home">
+          <img src="https://hrm.froid.works/assets/admin/layout/img/logo.png" height="22px" width="86px" id="logo-header" class="logo-default" />
+        </a>
+      </div>
 
-  <!-- Logo -->
-  <a href="/home" class="logo">
-    <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini">
-                    <b>A</b>LT</span>
-    <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg">
-                    <b>Admin</b>HRM</span>
-  </a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
 
-  <!-- Header Navbar: style can be found in header.less -->
-  <nav class="navbar navbar-static-top">
-    <!-- Sidebar toggle button-->
-    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-      <span class="sr-only">Toggle navigation</span>
-    </a>
-    <!-- Navbar Right Menu -->
-    <div class="navbar-custom-menu">
-      <ul class="nav navbar-nav">
-        <!-- Notifications: style can be found in dropdown.less -->
-        <li class="dropdown notifications-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-bell-o"></i>
-            <span class="label label-warning">10</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="header">You have 10 notifications</li>
-            <li>
-              <!-- inner menu: contains the actual data -->
-              <ul class="menu">
-                <li>
-                  <a href="#">
-                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-warning text-yellow"></i> Very long description here that
-                    may not fit into the page and may cause
-                    design problems
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-users text-red"></i> 5 new members joined
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-user text-red"></i> You changed your username
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer">
-              <a href="#">View all</a>
-            </li>
-          </ul>
-        </li>
+          <!-- Home -->
+          <li class="active">
+            <a href="/home">
+              Home
+            </a>
+          </li>
+          <!-- End Home -->
 
-        <!-- User Account: style can be found in dropdown.less -->
-        <li class="dropdown user user-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-            <span class="hidden-xs">{{ Auth::user()->name }}</span>
-          </a>
-          <ul class="dropdown-menu">
-            <!-- User image -->
-            <li class="user-header">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <!-- Leave -->
+          <li class="dropdown ">
+            <a href="" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"  >
+              Leave
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="" data-toggle="modal" data-target=".apply_modal">Apply Leave</a></li>
+              <li><a href="#">My Leave</a></li>
 
-              <p>
-                {{ Auth::user()->name }}
-                <small>Member since {{ Auth::user()->created_at }}</small>
-              </p>
-            </li>
-
-            <!-- Menu Footer-->
-            <li class="user-footer">
-              <div class="pull-left">
-                <a href="#" class="btn btn-default btn-flat">Profile</a>
-              </div>
-              <div class="pull-right">
-                <a href="{{ route('logout') }}" class="btn btn-default btn-flat" onclick="event.preventDefault();
+            </ul>
+          </li>
+          <!-- End Leave -->
+          <!-- My Account -->
+          <li class="dropdown">
+            <a href="" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+              My Account
+            </a>
+            <ul class="dropdown-menu">
+              {{--<li><a href="" data-toggle="modal" data-target=".change_password_modal" id="change_password_link">Change Password</a></li>--}}
+              <!-- Logout -->
+              <li>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
-                  Sign out
+                  Logout
                 </a>
-
                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
                       style="display: none;">
                   {{ csrf_field() }}
                 </form>
 
-              </div>
-            </li>
-          </ul>
-        </li>
+              </li>
+              <!-- End Logout -->
 
-      </ul>
+            </ul>
+          </li>
+          <!-- End Leave -->
+
+        </ul>
+      </div><!--/navbar-collapse-->
     </div>
-
-  </nav>
-</header>
+  </div>
+  <!-- End Navbar -->
+</div>
+<!--=== End Header ===-->

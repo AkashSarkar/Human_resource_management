@@ -14,7 +14,7 @@ class EmployeeModel extends Model
     protected $connection = 'pgsql_user';
     protected $table='users';
     protected $fillable = [
-        'name','email','password','f_name','phone','dob','p_address','l_address','remember_token','created_at',
+        'name','email','password','f_name','gender','phone','dob','p_address','l_address','remember_token','created_at',
     ];
 
     /**

@@ -6,19 +6,15 @@
 <div class="wrapper">
     <!--header-->
 @include('template._header')
-<!--main content-->
-    <div>
-        @include('template._errors')
-        @include('template._success')
-        @yield('content')
-        @stack('modals')
-    </div>
-
-    <!---->
-    <!-- Left side column. contains the logo and sidebar -->
-@include('template._mainSideNavbar')
-<!-- ./Left side column. contains the logo and sidebar -->
-    <!--footer-->
+{{--<!--main content-->--}}
+    {{--<div>--}}
+        {{--@include('template._errors')--}}
+        {{--@include('template._success')--}}
+        {{--@yield('content')--}}
+        {{--@stack('modals')--}}
+    {{--</div>--}}
+@include('template._body')
+{{--<!--footer-->--}}
 @include('template._footer')
 <!--./footer-->
 

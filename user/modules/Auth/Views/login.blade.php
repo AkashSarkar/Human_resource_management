@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin</title>
+    <title>User Panel</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -40,7 +40,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <h1><b>Admin</b></h1>
+        <h1><b>User panel</b></h1>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">

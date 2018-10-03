@@ -16,6 +16,7 @@ $factory->define(model::class, function (Faker $faker) {
         'email'=>$faker->email,
         'password'=>bcrypt('123456'),
         'f_name'=>$faker->name,
+        'gender'=>"male",
         'phone'=>"0".rand(1688200144,1699200144),
         'dob'=>$faker->time('Y-m-d H:i:s','now'),
         'p_address'=>$faker->address,

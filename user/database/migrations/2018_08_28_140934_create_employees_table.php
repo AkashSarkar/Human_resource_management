@@ -19,6 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->text('f_name');
+            $table->text('gender');
             $table->string('phone');
             $table->date('dob')->nullable();
             $table->longText('p_address');
