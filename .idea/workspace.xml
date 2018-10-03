@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575dfdfd-f613-4c8e-ba26-137445747fc4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/resources/views/template/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/resources/views/template/_header.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,16 +66,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hr@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hr: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="user_leaves: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -161,14 +154,14 @@
           <entry key="user_departments" value="3" />
           <entry key="user_holidays" value="1" />
           <entry key="user_leave_types" value="1" />
-          <entry key="user_leaves" value="2" />
-          <entry key="user_users" value="4" />
+          <entry key="user_leaves" value="3" />
+          <entry key="user_users" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Blade" value="34" />
-          <entry key="Database Element" value="26" />
+          <entry key="Database Element" value="28" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="PHP" value="43" />
@@ -178,16 +171,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="220" />
-          <entry key="php" value="3590" />
+          <entry key="php" value="3894" />
           <entry key="sql" value="19" />
           <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1500" />
+          <entry key="Blade" value="1788" />
           <entry key="JavaScript" value="220" />
-          <entry key="PHP" value="2090" />
+          <entry key="PHP" value="2106" />
           <entry key="PLAIN_TEXT" value="57" />
           <entry key="SQL" value="19" />
         </counts>
@@ -204,11 +197,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="522">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding>
                 <element signature="e#121#149#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4968">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -222,20 +224,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="275" column="65" lean-forward="true" selection-start-line="275" selection-start-column="65" selection-end-line="275" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="36" />
+            <state relative-caret-position="195">
+              <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -287,7 +280,6 @@
         <option value="$PROJECT_DIR$/admin_panel/public/resources/assets/backjs/Attendance/attendance/list.js" />
         <option value="$PROJECT_DIR$/admin_panel/app/Domain/RepoImpl/AttendanceRepoImpl.php" />
         <option value="$PROJECT_DIR$/user/resources/views/template/_head.blade.php" />
-        <option value="$PROJECT_DIR$/user/resources/views/template/_header.blade.php" />
         <option value="$PROJECT_DIR$/user/modules/Auth/Views/login.blade.php" />
         <option value="$PROJECT_DIR$/user/config/module.php" />
         <option value="$PROJECT_DIR$/user/modules/Personal Details/routes.php" />
@@ -305,6 +297,7 @@
         <option value="$PROJECT_DIR$/user/routes/web.php" />
         <option value="$PROJECT_DIR$/user/database/migrations/2019_08_28_142353_create_foreign_table.php" />
         <option value="$PROJECT_DIR$/user/database/migrations/2018_09_28_160040_create_leaves_table.php" />
+        <option value="$PROJECT_DIR$/user/resources/views/template/_header.blade.php" />
         <option value="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" />
       </list>
@@ -573,7 +566,7 @@
       <workItem from="1536916749684" duration="1518000" />
       <workItem from="1536918471999" duration="7670000" />
       <workItem from="1537026706031" duration="742000" />
-      <workItem from="1538553667981" duration="21817000" />
+      <workItem from="1538553667981" duration="23073000" />
     </task>
     <task id="LOCAL-00001" summary="attendence">
       <created>1537027185055</created>
@@ -607,10 +600,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45217000" />
+    <option name="totallyTimeSpent" value="46473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22424242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -786,13 +780,6 @@
     <entry file="file://$PROJECT_DIR$/user/modules/Auth/routes.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -962,17 +949,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_awards">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="96" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -985,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="522">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
             <element signature="e#121#149#0#PHP" expanded="true" />
           </folding>
@@ -995,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="275" column="65" lean-forward="true" selection-start-line="275" selection-start-column="65" selection-end-line="275" selection-end-column="65" />
+        <state relative-caret-position="-4968">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>

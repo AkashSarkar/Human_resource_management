@@ -42,7 +42,7 @@ class UserController extends Controller
         $last_leave = Db::table('leaves')->select('date')
             ->where([
                 ['user_id', auth::user()->id],
-                ['status', '=', "accepted"],
+                ['status', '=', "Approved"],
             ])->orderBy('date','asc')->first();
 //        dd($last_leave);
         return view('layouts.master', ['employee' => $employee, 'bank' => $bank, 'notices' => $notices, 'holidays' => $holidays,
