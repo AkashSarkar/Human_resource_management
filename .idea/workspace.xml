@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575dfdfd-f613-4c8e-ba26-137445747fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,7 +180,7 @@
           <entry key="js" value="220" />
           <entry key="php" value="3590" />
           <entry key="sql" value="19" />
-          <entry key="txt" value="25" />
+          <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -190,7 +188,7 @@
           <entry key="Blade" value="1500" />
           <entry key="JavaScript" value="220" />
           <entry key="PHP" value="2090" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="PLAIN_TEXT" value="57" />
           <entry key="SQL" value="19" />
         </counts>
       </usages-collector>
@@ -227,8 +225,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
+            <state relative-caret-position="1110">
+              <caret line="275" column="65" lean-forward="true" selection-start-line="275" selection-start-column="65" selection-end-line="275" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -575,7 +573,7 @@
       <workItem from="1536916749684" duration="1518000" />
       <workItem from="1536918471999" duration="7670000" />
       <workItem from="1537026706031" duration="742000" />
-      <workItem from="1538553667981" duration="21142000" />
+      <workItem from="1538553667981" duration="21817000" />
     </task>
     <task id="LOCAL-00001" summary="attendence">
       <created>1537027185055</created>
@@ -598,15 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538571854884</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="attendence leave and award count">
+      <created>1538575068821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538575068821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44542000" />
+    <option name="totallyTimeSpent" value="45217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22424242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -667,7 +671,8 @@
     <MESSAGE value="attendence" />
     <MESSAGE value="user panel" />
     <MESSAGE value="user done" />
-    <option name="LAST_COMMIT_MESSAGE" value="user done" />
+    <MESSAGE value="attendence leave and award count" />
+    <option name="LAST_COMMIT_MESSAGE" value="attendence leave and award count" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/admin_panel/modules/Attendance/Models/AttendanceModel.php">
@@ -990,8 +995,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
+        <state relative-caret-position="1110">
+          <caret line="275" column="65" lean-forward="true" selection-start-line="275" selection-start-column="65" selection-end-line="275" selection-end-column="65" />
         </state>
       </provider>
     </entry>
