@@ -30,9 +30,24 @@ class UserController extends Controller
         $holidays = DB::table('holidays')->limit(5)->get();
         $awards = DB::table("awards")->where('user_id', auth::user()->id)->limit(5)->get();
         $leave_types = DB::table('leave_types')->get();
-//        dd($leave_types);
+
+        $month = date('m');
+        $attendence = DB::table('attendances')->where([
+            ['user_id', auth::user()->id],
+            ["status", '=', 1]
+        ])->whereRaw('extract(month from created_at) =?', [$month])->count();
+
+        $numOfAwards = DB::table('awards')->where('user_id', auth::user()->id)->count();
+
+        $last_leave = Db::table('leaves')->select('date')
+            ->where([
+                ['user_id', auth::user()->id],
+                ['status', '=', "accepted"],
+            ])->orderBy('date','asc')->first();
+//        dd($last_leave);
         return view('layouts.master', ['employee' => $employee, 'bank' => $bank, 'notices' => $notices, 'holidays' => $holidays,
-            'awards' => $awards, 'leave_types' => $leave_types]);
+            'awards' => $awards, 'leave_types' => $leave_types, 'attendance' => $attendence, 'numOfAwards' => $numOfAwards,
+            'last_leave'=>$last_leave]);
     }
 
     public function post(Request $request)
@@ -47,7 +62,7 @@ class UserController extends Controller
                 'status' => "pending"
             ]
         );
-        if($leave){
+        if ($leave) {
             return redirect('/home');
         }
 

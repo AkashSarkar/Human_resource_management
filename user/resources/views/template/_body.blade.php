@@ -16,7 +16,7 @@
                 <div class="row profile-stat">
                     <div class="col-md-4 col-sm-4 col-xs-6" data-toggle="tooltip" data-placement="bottom" title="October">
                         <div class="uppercase profile-stat-title">
-                            0
+                            {{$attendance}}
                         </div>
                         <div class="uppercase profile-stat-text">
                             Attendance
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6" data-toggle="tooltip" data-placement="bottom" title="Leaves">
                         <div class="uppercase profile-stat-title">
-                            2/22
+                            {{$last_leave? $last_leave:"None"}}
                         </div>
                         <div class="uppercase profile-stat-text">
                             Leave
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6" data-toggle="tooltip" data-placement="bottom" title="Total Award Won">
                         <div class="uppercase profile-stat-title">
-                            1
+                            {{$numOfAwards}}
                         </div>
                         <div class="uppercase profile-stat-text">
                             Awards
@@ -265,25 +265,6 @@
                 </div><!--/end row-->
 
                 <hr>
-
-                <!--Profile Blog-->
-                <div class="panel panel-profile">
-                    <div class="panel-heading overflow-h">
-                        <h2 class="panel-title heading-sm pull-left"><i class="fa fa-tasks"></i>Attendance</h2>
-                    </div>
-                    <div class="panel-body panelHolder">
-
-                        <div class="alert-blocks alert-blocks-info">
-                            <div class="overflow-h">
-                                <strong class="color-dark">Last absent <small class="pull-right"><em>22-Oct-2018</em></small></strong>
-                                <small class="award-name">-19 day ago</small>
-                            </div>
-                        </div>
-
-                        <div id='calendar'></div>
-
-                    </div>
-                </div><!--/end row-->
                 <!--End Profile Blog-->
 
             </div>

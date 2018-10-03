@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575dfdfd-f613-4c8e-ba26-137445747fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/akash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/resources/views/layouts/employee_details/employee_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b747eb6-83e4-4930-97a2-1bf7baa05cdc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b747eb6-83e4-4930-97a2-1bf7baa05cdc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b747eb6-83e4-4930-97a2-1bf7baa05cdc/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b747eb6-83e4-4930-97a2-1bf7baa05cdc/storage_v2/_src_/database/hr.Cg0AAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/database/migrations/2018_09_28_160040_create_leaves_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/database/migrations/2018_09_28_160040_create_leaves_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/database/migrations/2019_08_28_142353_create_foreign_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/database/migrations/2019_08_28_142353_create_foreign_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/resources/views/layouts/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/resources/views/menu_admin/list.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/resources/views/menu_admin/modals/add.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/resources/views/menu_admin/modals/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/resources/views/template/_scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/resources/views/template/_scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,44 +153,44 @@
           <entry key="admin_users" value="1" />
           <entry key="js" value="2" />
           <entry key="json" value="2" />
-          <entry key="php" value="74" />
+          <entry key="php" value="77" />
           <entry key="sql" value="1" />
           <entry key="user_actions" value="1" />
-          <entry key="user_attendances" value="3" />
-          <entry key="user_awards" value="1" />
+          <entry key="user_attendances" value="4" />
+          <entry key="user_awards" value="2" />
           <entry key="user_bank_acs" value="2" />
           <entry key="user_companies" value="3" />
           <entry key="user_departments" value="3" />
           <entry key="user_holidays" value="1" />
           <entry key="user_leave_types" value="1" />
-          <entry key="user_leaves" value="1" />
+          <entry key="user_leaves" value="2" />
           <entry key="user_users" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="32" />
-          <entry key="Database Element" value="23" />
+          <entry key="Blade" value="34" />
+          <entry key="Database Element" value="26" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="42" />
+          <entry key="PHP" value="43" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="220" />
-          <entry key="php" value="2987" />
+          <entry key="php" value="3590" />
           <entry key="sql" value="19" />
-          <entry key="txt" value="21" />
+          <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1442" />
+          <entry key="Blade" value="1500" />
           <entry key="JavaScript" value="220" />
-          <entry key="PHP" value="1545" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="PHP" value="2090" />
+          <entry key="PLAIN_TEXT" value="25" />
           <entry key="SQL" value="19" />
         </counts>
       </usages-collector>
@@ -217,19 +204,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/resources/views/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="427">
+              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
               <folding>
                 <element signature="e#121#149#0#PHP" expanded="true" />
               </folding>
@@ -237,7 +215,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leaves">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -246,24 +224,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="350" column="141" selection-start-line="350" selection-start-column="141" selection-end-line="350" selection-end-column="141" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leave_types">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -331,10 +305,10 @@
         <option value="$PROJECT_DIR$/user/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/user/resources/views/template/_scripts.blade.php" />
         <option value="$PROJECT_DIR$/user/routes/web.php" />
-        <option value="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" />
         <option value="$PROJECT_DIR$/user/database/migrations/2019_08_28_142353_create_foreign_table.php" />
         <option value="$PROJECT_DIR$/user/database/migrations/2018_09_28_160040_create_leaves_table.php" />
         <option value="$PROJECT_DIR$/user/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/user/resources/views/template/_body.blade.php" />
       </list>
     </option>
   </component>
@@ -505,26 +479,22 @@
               <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
               <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
               <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
               <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
@@ -538,31 +508,6 @@
               <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="employee_details" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
@@ -571,12 +516,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Human_Resource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Human_Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -636,7 +575,7 @@
       <workItem from="1536916749684" duration="1518000" />
       <workItem from="1536918471999" duration="7670000" />
       <workItem from="1537026706031" duration="742000" />
-      <workItem from="1538553667981" duration="17953000" />
+      <workItem from="1538553667981" duration="21142000" />
     </task>
     <task id="LOCAL-00001" summary="attendence">
       <created>1537027185055</created>
@@ -652,11 +591,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538560299583</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="user done">
+      <created>1538571854884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538571854884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41353000" />
+    <option name="totallyTimeSpent" value="44542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -720,16 +666,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="attendence" />
     <MESSAGE value="user panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="user panel" />
+    <MESSAGE value="user done" />
+    <option name="LAST_COMMIT_MESSAGE" value="user done" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin_panel/database/seeds/UserSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="70" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_panel/modules/Attendance/Models/AttendanceModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -952,20 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_awards">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/resources/views/template/_mainSideNavbar.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -993,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leave_types">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/database/migrations/2019_08_28_142353_create_foreign_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1017,18 +936,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="350" column="141" selection-start-line="350" selection-start-column="141" selection-end-line="350" selection-end-column="141" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_actions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_actions">
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leave_types">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_attendances">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_awards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leaves">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1037,18 +980,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="427">
+          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
           <folding>
             <element signature="e#121#149#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://1b747eb6-83e4-4930-97a2-1bf7baa05cdc/database/hr/schema/public/table/user_leaves">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/user/resources/views/template/_body.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
         </state>
       </provider>
     </entry>
