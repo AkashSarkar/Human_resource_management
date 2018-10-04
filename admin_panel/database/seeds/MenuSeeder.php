@@ -95,14 +95,14 @@ class MenuSeeder extends Seeder
             '_parent_id' => '9',
             '_sort' => '2',
         ]);
-        DB::table('menus')->insert([
-            'id' => 11,
-            'uri_name' => 'view',
-            'url' => 'view',
-            'label' => 'View Attendance',
-            '_parent_id' => '9',
-            '_sort' => '2',
-        ]);
+//        DB::table('menus')->insert([
+//            'id' => 11,
+//            'uri_name' => 'view',
+//            'url' => 'view',
+//            'label' => 'View Attendance',
+//            '_parent_id' => '9',
+//            '_sort' => '2',
+//        ]);
         DB::table('menus')->insert([
             'id' => 12,
             'uri_name' => 'leave',
