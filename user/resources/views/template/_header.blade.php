@@ -33,7 +33,6 @@
             </a>
             <ul class="dropdown-menu">
               <li><a href="" data-toggle="modal" data-target=".apply_modal">Apply Leave</a></li>
-              <li><a href="#">My Leave</a></li>
 
             </ul>
           </li>

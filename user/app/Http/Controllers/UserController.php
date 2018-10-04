@@ -42,12 +42,17 @@ class UserController extends Controller
         $last_leave = Db::table('leaves')->select('date')
             ->where([
                 ['user_id', auth::user()->id],
-                ['status', '=', "accepted"],
+                ['status', '=', "Approved"],
             ])->orderBy('date','asc')->first();
 //        dd($last_leave);
+
+        $my_leaves=DB::table('leaves')->where([
+            ['user_id',auth::user()->id],
+            ['status','=','Approved']
+        ])->limit(5)->get();
         return view('layouts.master', ['employee' => $employee, 'bank' => $bank, 'notices' => $notices, 'holidays' => $holidays,
             'awards' => $awards, 'leave_types' => $leave_types, 'attendance' => $attendence, 'numOfAwards' => $numOfAwards,
-            'last_leave'=>$last_leave]);
+            'last_leave'=>$last_leave,"my_leaves"=>$my_leaves]);
     }
 
     public function post(Request $request)
